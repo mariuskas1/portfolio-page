@@ -1,0 +1,51 @@
+@import './../../styles.scss';
+
+// *{
+//     box-sizing: border-box;
+// }
+
+
+.footer-bg{
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+     @include displayFlex();
+}
+
+.footer{
+    width: 100%;
+    max-width: 1440px;
+    @include displayFlex($jc: space-between);
+    padding: 40px;
+    
+}
+
+.footer-left, .footer-center, .footer-right{
+    height: 100%;
+    @include displayFlex($ai: flex-start);
+    flex-direction: column;
+}
+
+.footer-logo{
+    width: 132px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+a, .footer-text{
+    font-family: 'Karla';
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+    transition: all 125ms ease;
+}
+
+a:hover{
+    color: $green;
+}
+
+.copyright{
+    font-family: 'Fira Code';
+    color: $green;
+    font-size: 16px;
+}

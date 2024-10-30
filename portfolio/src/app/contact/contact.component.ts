@@ -19,7 +19,8 @@ export class ContactComponent {
     message: ""
   };
 
-
+  policyAccepted = false;
+  
   mailTest = true;
 
 
