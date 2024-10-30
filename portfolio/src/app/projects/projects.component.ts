@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ModalComponent } from "./modal/modal.component";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ModalComponent],
+  imports: [ModalComponent, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

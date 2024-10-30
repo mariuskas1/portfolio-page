@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
@@ -10,11 +10,17 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss'
 })
 
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   @Input() currentLanguage!: string;
 
   constructor(private translate: TranslateService){
       
+  }
+
+  ngOnInit(): void {
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    this.translate.use(savedLanguage);
+    this.currentLanguage = savedLanguage;
   }
 
     toggleLanguage(event: Event) {

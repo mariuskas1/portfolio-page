@@ -1,16 +1,72 @@
 {
     "nav": {
         "about": "Über mich",
-        "skills": "Skills",
+        "skills": "Kenntnisse",
         "projects": "Projekte"
     },
     "title":{
-        "1": "Meine Arbeiten",
-        "2": "Kontakt"
+        "1": "Meine Projekte",
+        "2": "Kontakt",
+        "3": "Fullstack-Entwickler"
     },
     "marquee":{
-        "1": "Fullstack Developer",
+        "1": "Fullstack-Entwickler",
         "2": "Wohnhaft in Leipzig",
         "3": "Verfügbar für Fernarbeit"
+    },
+    "about":{
+        "title": "Wer ich bin",
+        "title2": "Über mich",
+        "text1": "Hi, ich bin ein deutsch- und englischsprachiger Fullstack-Entwickler, wohnhaft in Leipzig. Begeistert von den grenzenlosen Möglichkeiten in der IT, freue ich mich darauf, visuell ansprechende und intuitive Internetseiten und Applikationen zu entwickeln.",
+        "text2": "Ich kann sowohl vor Ort in Leipzig als auch remote übers Home-Office effektiv arbeiten.",
+        "text3": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
+        "text4": "Programmieren ist für mich eine kreative Art des Problemelösens. Ich kann komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen verwandeln und helfe Ihnen so, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+    },
+    "skills":{
+        "title": "Technologien",
+        "title2": "Kenntnisse",
+        "text1": "In der Vergangenheit habe ich bereits an vielfältigen Projekten mitgewirkt und dabei verschiedene Frontend- und Backend-Technologien eingesetzt. Ich bin immer offen dafür, neue Technologien zu erlernen, um in der sich ständig weiterentwickelnden Welt der Webentwicklung am Ball zu bleiben.",
+        "text2.1": "Sie benötigen",
+        "text2.2": "andere Kenntnisse?",
+        "text3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+        "button": "Let's talk",
+        "technologies": "Technologien",
+        "mindset1": "Wachstums-",
+        "mindset2": "mentalität",
+        "hover": "Besonders interessiert bin ich daran, diese Technologien zu erlernen:"
+    },
+    "projects":{
+        "title": "Ausgewählte Projekte",
+        "text": "Erkunden Sie eine Auswahl meiner Arbeiten hier - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "modal":{
+            "subheader": "Worum geht es in diesem Projekt?",
+            "next": "Nächstes Projekt"
+        }
+    },
+    "contact":{
+        "title": "Kontaktieren Sie mich",
+        "title2": "Lassen Sie uns zusammenarbeiten",
+        "title3": "Sie haben ein Problem zu lösen?",
+        "text1": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "text2": "Sie benötigen einen Fullstack-Entwickler?",
+        "text3": "Lassen Sie uns miteinander reden!",
+        "form":{
+            "caption1": "Wie lautet Ihr Name?",
+            "placeholder1": "Ihr Name kommt hier hin",
+            "caption2": "Wie lautet Ihre Mail-Adresse?",
+            "placeholder2": "youremail.com",
+            "caption3": "Wie kann ich Ihnen helfen?",
+            "placeholder3": "Hallo Marius, ich bin daran interessiert...",
+            "policy1": "Ich habe die",
+            "policy2": "Datenschutzerklärung", 
+            "policy3": "gelesen und stimme der Verarbeitung meiner Daten wie angeführt zu.",
+            "button": "Absenden"
+        }
+    },
+    "footer":{
+        "1": "Webentwickler",
+        "2": "Leipzig",
+        "3": "Impressum"
     }
+
 }
