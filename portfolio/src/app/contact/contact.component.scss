@@ -88,6 +88,7 @@ input[type=text],[type=email],textarea{
     color: white;
     outline: none;
     font-family: 'Karla';
+    resize: vertical;
 }
 
 input::placeholder, textarea::placeholder{
@@ -96,6 +97,20 @@ input::placeholder, textarea::placeholder{
     font-size: 14px;
 }
 
+input:-webkit-autofill, textarea:-webkit-autofill {
+    box-shadow: 0 0 0 1000px transparent inset !important; /* Ensures background remains transparent */
+    -webkit-text-fill-color: white !important; /* Ensures text color remains white */
+    background-clip: content-box !important; /* Maintains transparency */
+    border: none !important; /* Maintains no border */
+    font-family: 'Karla' !important; /* Consistent font */
+    transition: background-color 5000s ease-in-out 0s !important; /* Prevents color flash */
+}
+
+/* Ensures no flash and transparency during autofill */
+input:-webkit-autofill, textarea:-webkit-autofill {
+    transition: background-color 5000s ease-in-out, color 5000s ease-in-out;
+    -webkit-background-clip: text; /* Chrome-specific to clip background color to text */
+}
 
 
 input:focus::placeholder, textarea:focus::placeholder {
@@ -165,10 +180,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 button{
-    margin-top: 40px;
+    margin-top: 32px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
+
     border-radius: 24px;
     height: 40px;
     width: 110px;
@@ -181,4 +197,23 @@ button:hover{
     border: 1px solid $green;
 }
 
+button:disabled{
+    cursor: default;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
 
+
+.form-msg-div{
+    margin-top: 16px;
+    height: 14px;
+    width: 100%;
+    border: 1px solid white;
+    @include displayFlex();
+}
+
+.form-msg{
+    color: $green;
+    font-family:  'Karla';
+    font-size: 12px;
+}

@@ -15,29 +15,34 @@
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="input-div">
                     <span class="input-caption">What's your name?</span>
-                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required >
+                    <input spellcheck="false" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required >
                 </div>
                 <div class="input-div" id="middle-div">
                     <span class="input-caption">What's your email?</span>
-                    <input [(ngModel)]="contactData.email" name="email" type="email" id="mail" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <input spellcheck="false" [(ngModel)]="contactData.email" name="email" type="email" id="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
                 <div class="input-div">
                     <span class="input-caption">How can I help you?</span>
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Hello Marius, I am interested in..." required>
-                        @if(!message.valid && message.touched){Please enter a message}
-                    </textarea>
+                    <textarea spellcheck="false" #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Hello Marius, I am interested in..." required></textarea>
                 </div>
 
                 <div class="checkbox-div">
                     <label class="checkbox-container">
-                        <input type="checkbox">
+                        <input type="checkbox" [(ngModel)]="policyAccepted" name="checkbox">
                         <span class="checkmark"></span>
                     </label>
 
                     <span class="checkbox-text">I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span> 
                 </div>
 
-                <button type="submit">Say Hello ;)</button>
+                <!-- <div class="form-msg-div">
+                    @if (!message.valid && message.touched){
+                        <span class="form-msg">Please enter a message</span>
+                    }
+                </div> -->
+                
+
+                <button type="submit" [disabled]="!policyAccepted">Say Hello ;)</button>
 
 
             </form>
