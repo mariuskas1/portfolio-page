@@ -1,0 +1,134 @@
+@import './../../styles.scss';
+
+
+
+.smaller-bg{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(28, 28, 28);
+    @include displayFlex($ai: flex-start);
+    
+}
+
+
+.references-section{
+    height: 100%;
+    @include displayFlex();
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.references-header{
+    color: $green;
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight:  700;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.references-container{
+    @include displayFlex();
+    gap: 32px;
+    // width: max-content;
+    // animation: moveLeft 10s infinite;
+
+}
+
+.reference-div{
+    aspect-ratio: 2.31;
+    width: 500px;
+    height: auto;
+    background: rgba(61, 207, 182, 0.3);
+    border: 1px solid $green;
+    border-radius: 32px;
+    @include displayFlex($jc: space-between);
+    flex-direction: column;
+    padding: 40px;
+    transition: all 0.3s ease;
+    
+
+}
+
+.reference-text{
+    color: white;
+    font-family: 'Karla';
+    font-size: 18px;
+}
+
+.reference-name-div{
+    @include displayFlex();
+    width: 100%;
+}
+
+.reference-footer-bar{
+    flex-grow: 1;
+    height: 0;
+    border: 1px solid white;
+}
+
+.reference-name{
+    color: white;
+    font-family: 'Karla';
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+
+.references-footer{
+    @include displayFlex();
+    width: 100%;
+    margin-top: 24px;
+}
+
+.arrows-div{
+    @include displayFlex($jc:space-between);
+    width: 150px;
+}
+
+.arrow-img{
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all 125ms ease;
+    
+
+    &:hover{
+        scale: 1.1;
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(62%) sepia(46%) saturate(549%) hue-rotate(120deg) brightness(104%) contrast(89%);
+    }
+}
+
+#arrow-back:hover{
+    transform: translateX(-2px);
+}
+
+#arrow-next:hover{
+    transform: translateX(2px);
+}
+
+.ellipse-img{
+    width: 5px;
+    height: 5px;
+}
+
+
+
+.reference-div.out{
+    height: 180px;
+}
+    
+
+.green{
+    filter: brightness(0) saturate(100%) invert(62%) sepia(46%) saturate(549%) hue-rotate(120deg) brightness(104%) contrast(89%);
+}
+
+
+@keyframes moveLeft {
+    to {
+        transform: translateX(-50%);
+    }
+}

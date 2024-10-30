@@ -1,0 +1,63 @@
+@import './../../../styles.scss';
+
+.marquee{
+    width: calc(100% + 35px);
+    height: 62px;
+    position: absolute;
+    bottom: 40px;
+    left: -56px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(5.300000190734863px);
+    padding: 2px 32px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-1deg);
+}
+
+ .marquee-content{
+    overflow: clip;
+ }
+    
+
+.marquee-track{
+    @include displayFlex();
+    gap: 80px;
+    padding-left: 80px;
+    animation: marquee 20s linear infinite;
+    width: max-content;
+}
+
+
+.radio-btn{
+    width: 8px;
+    height: 8px;
+}
+
+.marquee-text{
+    font-family: 'Karla';
+    font-size: 28px;
+    background-color: transparent;
+    color: $green;
+    line-height: 38.4px;
+    white-space: nowrap;
+}
+
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media(max-height: 600px){
+    .marquee{
+        bottom: 24px;
+        height: 40px;
+    }
+    .marquee-text{
+        font-size: 24px;
+    }
+}

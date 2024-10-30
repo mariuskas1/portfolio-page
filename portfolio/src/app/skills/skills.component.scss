@@ -1,0 +1,231 @@
+@import './../../styles.scss';
+
+.content{
+    width: 100%;
+    @include displayFlex();
+
+}
+
+.info-box{
+    height: 400px;
+    width: 400px;
+    border: 1px solid $green;
+    border-radius: 20px;
+    background: rgba(61, 207, 182, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 24px;
+    margin-top: 12px;
+    
+}
+
+.info-text{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Karla';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 18px;
+    text-align: justify;
+    display: block;
+}
+
+.sub-header{
+    font-family: 'Fira Code';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 48px;
+    display: block;
+}
+
+.btn{
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: 'Karla';
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 132px;
+    height: 40px;
+    width: 110px;
+    transition: all 125ms ease;
+
+    &:hover{
+        cursor: pointer;
+        color: $green;
+        border: 1px solid $green;
+    }
+}
+
+.skill-icons-container{
+    margin-top: 16px;
+    gap: 32px;
+    @include displayFlex($jc: flex-start, $ai: flex-start);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+
+.icon-box{
+   @include displayFlex($jc: flex-start);
+   flex-direction: column;
+   width: 80px;
+   height: 80px;
+   padding-top: 8px;
+}
+
+.icon-box:hover{
+    cursor: default;
+}
+
+.icon-box:hover .skill-icon{
+    scale: 1.05;
+}
+
+.skill-icon{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 4px;
+    transition: all 125ms ease;
+}
+
+.icon-description{
+    font-family: 'Fira Code';
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+
+.technologies-div{
+    @include displayFlex($ai: flex-start);
+    flex-direction: column;
+    width: 440px;
+    margin-left: 56px;
+}
+
+.technologies-header{
+    color: $green;
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.technologies-footer{
+    @include displayFlex($jc: flex-start);
+    width: 100%;
+    margin-top: 24px;
+}
+
+.next-btn{
+    @include displayFlex();
+    background-color: transparent;
+    color: $green;
+    border: none;
+    font-family: 'Karla';
+    font-size: 16px;
+    transition: all 125ms ease;
+}
+
+.next-img{
+    height: 20px;
+    width: 20px;
+    margin-left: 4px;
+}
+
+.next-btn:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+.next-btn:hover .next-img{
+    transform: translate(2px);
+    scale: 1.2;
+}
+
+#growth{
+    position: relative;
+}
+
+#growth:hover .growth-div{
+    display: block;
+}
+
+.growth-div{
+    position: absolute;
+    display: none;
+}
+
+#growth .growth-div{
+    // display: block;
+    top: -70px;
+    left: 4px;
+    
+}
+
+.growth-div .speech-bubble{
+    width: 120px;
+    height: 72px;
+    // padding: 4px;
+    @include displayFlex();
+}
+
+
+
+.speech-bubble {
+	position: relative;
+	background: #f5f5f5;
+	border-radius: .4em;
+    @include displayFlex();
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	left: 30%;
+	width: 0;
+	height: 0;
+	border: 11px solid transparent;
+	border-top-color: #f5f5f5;
+	border-bottom: 0;
+	margin-left: -11px;
+	margin-bottom: -11px;
+}
+
+
+.bubble-content{
+     @include displayFlex();
+     flex-direction: column;
+}
+
+.bubble-icons-div{
+    @include displayFlex();
+    margin-top: 4px;
+    gap: 8px;
+}
+
+.bubble-icon-box{
+    @include displayFlex();
+    flex-direction: column;
+   
+    
+}
+
+.bubble-caption{
+    color: $green;
+    font-family: 'Karla';
+    font-size: 10px;
+    text-align: center;
+}
+
+.bubble-icon{
+    width: 18px;
+    height: 18px;
+}
+

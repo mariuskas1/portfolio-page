@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "about": "About me",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    "title":{
+        "1": "Check my work",
+        "2": "Contact me"
+    },
+    "marquee":{
+        "1": "Fullstack Developer",
+        "2": "Based in Leipzig",
+        "3": "Available for remote work"
+    }
+}

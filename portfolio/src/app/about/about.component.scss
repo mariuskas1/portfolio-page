@@ -1,0 +1,77 @@
+@import './../../styles.scss';
+
+.content{
+    @include displayFlex();
+    width: 80vw;
+    height: 85vh;
+   
+}
+
+.left{
+    @include displayFlex($ai: flex-start);
+    width: 50%;
+    height: 100%;
+    
+}
+
+.right{
+    @include displayFlex($ai: flex-end);
+    width: 50%;
+    height: 100%;
+   
+}
+
+
+.photo{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+.info-box{
+    height: 400px;
+    width: 400px;
+    border: 1px solid $green;
+    border-radius: 20px;
+    background: rgba(61, 207, 182, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 24px;
+    margin-top: 12px;
+    
+}
+
+.info-text{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Karla';
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 18px;
+    text-align: justify;
+    display: block;
+}
+
+.info-row{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.info-row-img{
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.info-row-text{
+    font-family: 'Karla';
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+
+
