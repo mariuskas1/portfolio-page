@@ -1,10 +1,11 @@
 import { Component, Input, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './modal.component.html',
   styleUrl: './modal.component.scss'
 })

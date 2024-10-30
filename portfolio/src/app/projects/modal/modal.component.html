@@ -9,7 +9,7 @@
                 <div class="info-div">
                     <span class="project-number">0{{openedProjectData.number}}</span>
                     <span class="project-name">{{openedProjectData.name}}</span>
-                    <span class="project-subheader">What is this project about?</span>
+                    <span class="project-subheader">{{ 'projects.modal.subheader' | translate}}</span>
                     <span class="project-description">{{openedProjectData.description}}</span>
                     <div class="technologies-div-large">
                         @for (technology of openedProjectData.technologies; track $index) {
@@ -31,7 +31,7 @@
             </div>
 
             <div class="project-modal-footer">
-                <button class="next-btn" (click)="showNextProject()">Next project <img src="./../../../assets/img/arrow_forward.png" class="next-img"></button>
+                <button class="next-btn" (click)="showNextProject()">{{ 'projects.modal.next' | translate}} <img src="./../../../assets/img/arrow_forward.png" class="next-img"></button>
             </div>
     
         </div>
