@@ -1,0 +1,184 @@
+@import './../../styles.scss';
+
+
+
+#contact-section{
+    height:90vh;
+}
+
+.normal-content{
+    align-items: flex-start;
+    border: none;
+}
+
+h4{
+    line-height: 48px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.info-subheader{
+    font-family: 'Fira Code';
+    font-size: 18px;
+    font-weight: 700;
+    color: $green;
+
+}
+
+.info-text{
+    color: white;
+    font-family: 'Karla';
+    font-size: 14px;
+    display: block;
+    margin-top: 16px;
+    
+}
+
+.green{
+    color: $green;
+}
+
+
+.contact-info{
+    width: 500px;
+    height: 100%;
+    
+}
+
+.contact-form-div{
+    width: 500px;
+    padding-left: 32px;
+    
+}
+
+form{
+    @include displayFlex();
+    flex-direction: column;
+    border: none;
+    width: 100%;
+}
+
+
+.input-div{
+    @include displayFlex($ai: flex-start);
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    padding:  24px 32px;
+    box-sizing: border-box;
+}
+
+#middle-div{
+    border: none;
+}
+
+.input-caption{
+    font-family: 'Fira Code';
+    color: $green;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: 'Karla';
+}
+
+input::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+    font-family: 'Karla';
+    font-size: 14px;
+}
+
+
+
+input:focus::placeholder {
+    color: transparent; 
+}
+
+.checkbox-div{
+    @include displayFlex($jc: flex-start);
+    margin-top: 32px;
+    width: 100%;
+    padding-left: 8px;
+    border: none;
+    
+}
+
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox container */
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Style the custom checkmark box */
+.checkbox-container .checkmark {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1.5px solid $green;
+    border-radius: 2px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 125ms, border-color 125ms;
+}
+
+/* Show checkmark when checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+    background-color: $green; /* Color when checked */
+    border-color: $green;
+}
+
+.checkbox-text{
+    color: white;
+    font-size: 12px;
+    font-family: 'Karla';
+    display: block;
+    white-space: nowrap;
+}
+
+.checkbox-text a{
+    color: $green;
+    text-decoration: none;
+    font-family: 'Fira Code';
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.checkbox-div a:hover{
+    color: white;
+}
+
+button{
+    margin-top: 40px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    height: 40px;
+    width: 110px;
+    transition: all 125ms ease;
+}
+
+button:hover{
+    cursor: pointer;
+    color: $green;
+    border: 1px solid $green;
+}
+
+

@@ -1,0 +1,41 @@
+@if(projectRowClicked && openedProjectData){
+    <div class="modal-bg" (click)="hideModal()">
+        <div class="project-modal" (click)="$event.stopPropagation()">
+            <div class="project-modal-header">
+                <button class="close-btn" (click)="hideModal()"><img src="./../../../assets/img/close_small.png" class="close-img"></button>
+            </div>
+
+            <div class="project-modal-content">
+                <div class="info-div">
+                    <span class="project-number">0{{openedProjectData.number}}</span>
+                    <span class="project-name">{{openedProjectData.name}}</span>
+                    <span class="project-subheader">What is this project about?</span>
+                    <span class="project-description">{{openedProjectData.description}}</span>
+                    <div class="technologies-div-large">
+                        @for (technology of openedProjectData.technologies; track $index) {
+                            <div class="technology-div">
+                                <img [src]="'./../../../assets/img/skills/' + technology.toLowerCase() + '.png'" class="technology-icon">
+                                <span class="technology-name">{{technology}}</span>
+                            </div>
+                        }
+                    </div>
+                    <div class="link-div">
+                        <a href="{{openedProjectData.links.git}}">GitHub <img src="./../../../assets/img/arrow_outward_green.png" class="arrow-img"></a>
+                        <a href="{{openedProjectData.links.test}}">Live Test <img src="./../../../assets/img/arrow_outward_green.png" class="arrow-img"></a>
+                    </div>
+                </div>
+
+                <div class="large-preview-div">
+                    <img src="{{openedProjectData.image}}" alt="">
+                </div>
+            </div>
+
+            <div class="project-modal-footer">
+                <button class="next-btn" (click)="showNextProject()">Next project <img src="./../../../assets/img/arrow_forward.png" class="next-img"></button>
+            </div>
+    
+        </div>
+    
+    </div>
+}
+ 

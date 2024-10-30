@@ -1,0 +1,20 @@
+    <div class="nav-wrapper">
+        <nav class="fontFira">
+            <div class="menu">
+                <label class="switch">
+                    <input type="checkbox" [checked]="currentLanguage === 'de'" (change)="toggleLanguage($event)">
+                    <span class="slider"></span>
+                </label>
+                  
+                <a href="#about">{{'nav.about' | translate}}</a>
+                <a href="#skills">{{'nav.skills' | translate}}</a>
+                <a href="#projects">{{'nav.projects' | translate}}</a>
+            </div>
+            <div class="logo">
+                <img src="./../../../assets/img/Logo_dark(1).png" class="logo">
+            </div>
+        </nav>
+    </div>
+    
+
+

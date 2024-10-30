@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "about": "Über mich",
+        "skills": "Skills",
+        "projects": "Projekte"
+    },
+    "title":{
+        "1": "Meine Arbeiten",
+        "2": "Kontakt"
+    },
+    "marquee":{
+        "1": "Fullstack Developer",
+        "2": "Wohnhaft in Leipzig",
+        "3": "Verfügbar für Fernarbeit"
+    }
+}

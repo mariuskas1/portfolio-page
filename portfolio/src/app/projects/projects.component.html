@@ -1,0 +1,95 @@
+<div class="normal-bg" id="projects-section">
+    <div class="normal-content" >
+        <div class="content">
+            <h3>Portfolio</h3>
+            <h4>Featured Projects</h4>
+            <span class="description">Explore a selection of my work here - Interact with <br>projects to see my skills in action.</span>
+
+            <div class="flex-div">
+                <div class="projects-div">
+                    <div class="project-row" (mouseenter)="showPreview(1)" (mouseleave)="hidePreview()" (click)="openProjectModal(0)">
+                        <div class="project-title">
+                            <span>Join</span>
+                            <img src="./../../assets/img/arrow_outward.png" class="arrow-link">
+                        </div>
+                        <div class="project-technologies">
+                            <span class="technology-span">JavaScript</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">HTML</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">CSS</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="project-row middle-row" (mouseenter)="showPreview(2)" (mouseleave)="hidePreview()" (click)="openProjectModal(1)">
+                        <div class="project-title">
+                            <span>Sharkie</span>
+                            <img src="./../../assets/img/arrow_outward.png" class="arrow-link">
+                        </div>
+                        <div class="project-technologies">
+                            <span class="technology-span">JavaScript</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">HTML</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-row" (mouseenter)="showPreview(3)" (mouseleave)="hidePreview()" (click)="openProjectModal(2)">
+                        <div class="project-title">
+                            <span>Next Project</span>
+                            <img src="./../../assets/img/arrow_outward.png" class="arrow-link">
+                        </div>
+                        <div class="project-technologies">
+                            <span class="technology-span">Angular</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">TypeScript</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">Firebase</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">HTML</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="projects-preview-div">
+                    @if(hoveredProject === 1){
+                        <div class="project1-preview">
+                            <div class="single-project-preview-div">
+                                <img src="./../../assets/img/projects/join.png" class="project-img-small">
+                                <img src="./../../assets/img/projects/stripes.png" class="small-project-bg">
+                            </div>
+                        </div>
+                    }
+                   
+                    @if(hoveredProject === 2){
+                        <div class="project2-preview">
+                            <div class="single-project-preview-div">
+                                <img src="./../../assets/img/projects/polloloco.png" class="project-img-small">
+                                <img src="./../../assets/img/projects/stripes.png" class="small-project-bg">
+                            </div>
+                        </div>
+                    }
+
+                    @if(hoveredProject === 3){
+                        <div class="project3-preview">
+                            <div class="single-project-preview-div">
+                                <img src="./../../assets/img/projects/dabubble.png" class="project-img-small">
+                                <img src="./../../assets/img/projects/stripes.png" class="small-project-bg">
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            
+
+
+           <app-modal [projectRowClicked]="projectRowClicked" [clickedProject]="clickedProject" (closeModal)="closeModal()" (next)="nextProject()"></app-modal>
+
+
+        </div>
+    </div>
+</div>

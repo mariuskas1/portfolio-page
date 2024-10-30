@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
+    "jquery": "^3.7.1",
+    "ngx-slick-carousel": "^17.0.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "@types/swiper": "^6.0.0"
+  }
+}

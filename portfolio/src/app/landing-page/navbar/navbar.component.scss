@@ -1,0 +1,170 @@
+@import './../../../styles.scss';
+
+.nav-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 13.56%, rgba(0, 0, 0, 0.6) 84.01%);
+  @include displayFlex
+}
+
+
+nav {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  
+  height: 98px;  
+  width: 100%;
+  max-width: 1440px;
+  @include displayFlex($jc: space-between);
+
+  > div {
+    padding: 32px;
+    a {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      transition: all 125ms ease; 
+      z-index: 500;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: $green;
+        border-radius: 50%;
+        opacity: 0; 
+        transition: opacity 0.2s ease, transform 0.2s ease; 
+      }
+
+      &:hover {
+        cursor: pointer;
+        
+        &::after {
+          opacity: 1; 
+          transform: translateX(-50%) translateY(3px); 
+        }
+      }
+    }
+  }
+}
+
+
+.menu {
+    @include displayFlex($jc: flex-start); 
+    gap: 32px; 
+  }
+
+.logo{
+  width: 132px;
+  height: 48px;
+}
+
+
+
+.switch input {
+  display: none;
+}
+
+/* Container for the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 28px;
+  border: 2px solid $green;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+/* Style for the slider */
+.slider {
+  position: absolute;
+  top: -1px; /* Center the slider vertically with slight overlap */
+  left: -1px; /* Center the slider horizontally with slight overlap */
+  right: -1px;
+  bottom: -1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* Inactive language label */
+.slider::after {
+  content: "DE";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: normal;
+  color: $green;
+  transition: 0.4s;
+  z-index: 1; /* Ensure it's above the slider background */
+}
+
+/* Oval circle inside the slider */
+.slider:before {
+  position: absolute;
+  content: "EN";
+  height: 30px;
+  width: 42px; /* Extend width to cover more of the track */
+  left: 0;
+  bottom: 0;
+  background-color: $green;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.4s;
+  z-index: 2; /* Ensure it covers the inactive language text */
+}
+
+/* Change background and text when checked */
+input:checked + .slider:before {
+  transform: translateX(45px); /* Adjust distance to fit extended width */
+  content: "DE"; /* Change displayed text to 'DE' */
+}
+
+/* Change inactive language code text to 'EN' when checked */
+input:checked + .slider::after {
+  content: "EN";
+  left: 14px;
+  right: auto; /* Reset right positioning */
+}
+
+
+@media(max-height: 600px){
+  nav{
+    height: 88px;
+    font-size: 16px;
+  }
+
+  .switch {
+    width: 72px; /* Original width 84px - 8px */
+    height: 24px; /* Original height 28px - 8px */
+  }
+
+  .slider:before {
+    height: 26px; /* Reduced height */
+    width: 34px; /* Reduced width to keep oval shape */
+  }
+
+  .slider::after {
+    right: 10px; /* Adjust for smaller width */
+    font-size: 10px; /* Slightly reduce font size for smaller switch */
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(40px); /* Adjust distance to fit extended width */
+  }
+
+}
