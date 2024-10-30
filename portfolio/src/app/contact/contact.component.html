@@ -12,18 +12,20 @@
         </div>
 
         <div class="contact-form-div">
-            <form action="">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="input-div">
                     <span class="input-caption">What's your name?</span>
-                    <input type="text" placeholder="Your name goes here">
+                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required >
                 </div>
                 <div class="input-div" id="middle-div">
                     <span class="input-caption">What's your email?</span>
-                    <input type="text" placeholder="youremail@email.com">
+                    <input [(ngModel)]="contactData.email" name="email" type="email" id="mail" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 </div>
                 <div class="input-div">
                     <span class="input-caption">How can I help you?</span>
-                    <input type="text" placeholder="Hello Marius, I am interested in...">
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Hello Marius, I am interested in..." required>
+                        @if(!message.valid && message.touched){Please enter a message}
+                    </textarea>
                 </div>
 
                 <div class="checkbox-div">
@@ -35,7 +37,7 @@
                     <span class="checkbox-text">I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span> 
                 </div>
 
-                <button>Say Hello ;)</button>
+                <button type="submit">Say Hello ;)</button>
 
 
             </form>
