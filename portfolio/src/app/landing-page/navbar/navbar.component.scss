@@ -14,6 +14,7 @@ nav {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   
+  
   height: 98px;  
   width: 100%;
   max-width: 1440px;
@@ -63,6 +64,8 @@ nav {
 .logo{
   width: 132px;
   height: 48px;
+  margin-right: 32px;
+  @include displayFlex();
 }
 
 
@@ -86,9 +89,9 @@ nav {
 .slider {
   position: absolute;
   top: -1px; /* Center the slider vertically with slight overlap */
-  left: -1px; /* Center the slider horizontally with slight overlap */
+  left: -2px; /* Center the slider horizontally with slight overlap */
   right: -1px;
-  bottom: -1px;
+  bottom: -2px;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.4s;
@@ -112,7 +115,7 @@ nav {
 .slider:before {
   position: absolute;
   content: "EN";
-  height: 30px;
+  height: 28px;
   width: 42px; /* Extend width to cover more of the track */
   left: 0;
   bottom: 0;
@@ -142,6 +145,31 @@ input:checked + .slider::after {
 }
 
 
+.mobile-logo{
+  display: none;
+  height: 48px;
+  width: 48px;
+  margin-left: 16px;
+}
+
+
+.mobile-menu-img{
+  display: none;
+  margin-right: 24px;
+  width: 32px;
+  height: 21px;
+  z-index: 2000;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
 @media(max-height: 600px){
   nav{
     height: 88px;
@@ -149,13 +177,14 @@ input:checked + .slider::after {
   }
 
   .switch {
-    width: 72px; /* Original width 84px - 8px */
+    width: 64px; /* Original width 84px - 8px */
     height: 24px; /* Original height 28px - 8px */
   }
 
   .slider:before {
-    height: 26px; /* Reduced height */
+    height: 23px; /* Reduced height */
     width: 34px; /* Reduced width to keep oval shape */
+    bottom: 1px;
   }
 
   .slider::after {
@@ -164,7 +193,29 @@ input:checked + .slider::after {
   }
 
   input:checked + .slider:before {
-    transform: translateX(40px); /* Adjust distance to fit extended width */
+    transform: translateX(30px); /* Adjust distance to fit extended width */
   }
 
+}
+
+@media(max-width: 1000px){
+  nav{
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 650px){
+  .menu{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .mobile-logo{
+    display: block;
+  }
+  .mobile-menu-img {
+    display: block;
+  }
 }

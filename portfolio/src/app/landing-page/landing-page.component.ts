@@ -4,6 +4,7 @@ import { TitleComponent } from "./title/title.component";
 import { VerticalsComponent } from './verticals/verticals.component';
 import { MarqueeComponent } from './marquee/marquee.component';
 
+
 @Component({
   selector: 'app-landing-page',
   standalone: true,

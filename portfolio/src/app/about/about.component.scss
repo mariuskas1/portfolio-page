@@ -23,15 +23,15 @@
 
 
 .photo{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 20px;
 }
 
 
 .info-box{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     border: 1px solid $green;
     border-radius: 20px;
     background: rgba(61, 207, 182, 0.1);
@@ -74,4 +74,154 @@
 
 
 
+@media(max-width: 1150px){
+    .content{
+        width: 100%;
+        height: 100%;
+       
+    }
 
+   
+}
+
+@media(max-width: 1000px){
+    .photo{
+        width: 420px;
+        height: 420px;
+    }
+    
+    .info-box{
+        height: 420px;
+        width: 420px;        
+    }
+
+    .info-text{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .info-row-text{
+        font-size: 12px;
+    }
+    .info-row{
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 900px){
+    .photo{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .info-box{
+        height: 380px;
+        width: 380px;     
+        padding: 32px;
+    }
+
+    .scroll-div {
+        height: 85%;
+        width: calc(100% + 32px);
+        overflow: auto; 
+        padding-bottom: 32px;
+        padding-right: 8px;
+        border: none;
+    }
+
+   
+
+    .info-text{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .info-row{
+        margin-bottom: 4px;
+    }
+}
+
+
+@media(max-width: 775px){
+    .content{
+        flex-direction: column;
+        height: auto;
+        padding-top: 500px;
+        
+    }
+
+    .left, .right{
+        width: 100%;
+        height: 100%;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .info-box{     
+        padding: 32px;
+    }
+   
+   .scroll-div{
+    padding-right: 24px ; 
+    overflow: hidden;
+   }
+
+   .info-row-text{
+    font-size: 14px;
+   }
+   .info-row{
+    margin-bottom: 12px;
+   }
+
+    .info-text{
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .right{
+        margin-top: 32px;
+    }
+    .photo, .info-box{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+
+@media(max-height: 600px){
+    .content{
+        height: 100%;
+    }
+    .photo, .info-box{
+        width: 400px;
+        height: 400px;
+    }
+    .info-text{
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+    .info-row-text{
+        font-size: 12px;
+    }
+    .info-row{
+        margin-bottom: 4px;
+    }
+}
+
+@media(max-width: 500px){
+    // .box{
+    //     width: 90%;
+    // }
+    .photo, .info-box{
+        width: 90%;
+        height: auto;
+
+    }
+    .right{
+        margin-left: 40px;
+    }
+    .scroll-div{
+        padding-bottom: 0;
+    }
+    
+}

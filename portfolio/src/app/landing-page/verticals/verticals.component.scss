@@ -15,13 +15,23 @@
 .vertical-div{
     @include displayFlex($jc: flex-start, $ai: center);
     flex-direction: column;
+    border: none;
+    width: 40px;
 }
 
 .left{
-    padding-left: 56px;
+    margin-left: 48px;
 }
 
+.right{
+    margin-right: 64px;
+}
 
+#mobile-mail-icon{
+    display: none;
+    // width: 26px;
+    // height: 21px;
+}
 
 .vertical-bar-right{
     width: 0;
@@ -104,3 +114,71 @@
         height: 150px;
     }
   }
+
+
+  @media(max-width: 1000px){
+    .left{
+        margin-left: 40px;
+    }
+    
+    .right{
+        margin-right: 56px;
+    }
+  }
+
+  @media(max-width: 800px){
+    .left{
+        margin-left: 32px;
+    }
+    
+    .right{
+        margin-right: 48px;
+    }
+  }
+  @media(max-width: 700px){
+    .left{
+        margin-left: 24px;
+    }
+    
+    .right{
+        margin-right: 32px;
+    }
+  }
+
+  
+  
+@media(max-width: 650px){
+   .mail{
+        display: none;
+    }
+    #mobile-mail-icon{
+        display: block;
+    }
+    .vertical-bar-right{
+        height: 110px;
+    }
+    .contact-icon{
+        height: 24px;
+        width: 24px;
+    }
+    .vertical-bar-left{
+        height: 150px;
+    }
+    .arrow-div{
+        height: 40px;
+        width: 24px;
+    }
+    
+    .left{
+        margin-left: 12px;
+    }
+    .right{
+        margin-right: 16px;
+    }
+}
+
+@media(max-width: 500px){
+    .vertical-bar-right{
+        height: 100px;
+    }
+}

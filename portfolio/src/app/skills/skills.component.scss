@@ -7,8 +7,8 @@
 }
 
 .info-box{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     border: 1px solid $green;
     border-radius: 20px;
     background: rgba(61, 207, 182, 0.1);
@@ -230,3 +230,127 @@
     height: 18px;
 }
 
+
+@media(max-width: 1000px){
+    .skill-icon{
+        height: 32px;
+        width: 32px;    
+    }
+    .icon-box{
+        width: 70px;
+        height: 70px;
+    }
+    .technologies-footer{
+        margin-top: 32px;
+    }
+    .speech-bubble:after{
+        left: 25%;
+    }
+    .content{
+        padding-left: 32px;
+    }
+}
+
+@media(max-width: 900px){
+    .icon-box{
+        width: 60px;
+        height: 60px;
+    }
+   
+    .info-box{
+        width: 400px;
+    }
+    // .technnologies-div{
+    //     width: 300px;
+    // }
+}
+
+
+@media(max-width: 775px){
+    .content{
+         flex-direction: column;
+         height: auto;
+        padding-top: 250px;
+        margin-top: 450px;
+    }
+    .info-box{
+        width: 450px;
+    }
+    .content{
+        padding-left: 0;
+    }
+    .box{
+        margin-top: 200px;
+        padding-top: 400px;
+    }
+    .technologies-div{
+        margin-left: 0;
+        z-index: 1000;
+        margin-top: 24px;
+    }
+    .icon-box{
+        width: 80px;
+        height: 80px;
+     }
+     .skill-icon{
+        height: 40px;
+        width: 40px;
+     }
+     .skill-icons-container{
+        gap: 24px;
+     }
+    
+}
+
+
+@media(max-height: 600px){
+    .info-box{
+        height: 400px;
+        width: 400px;
+    }
+    .sub-header{
+        margin-top: 24px;
+    }
+    .btn{
+        margin-top: 0;
+    }
+    .technologies-div{
+        width: 400px;
+       
+    }
+    .skill-icon{
+        height: 32px;
+        width: 32px;    
+    }
+    .icon-box{
+        width: 70px;
+        height: 70px;
+    }
+    .technologies-footer{
+        margin-top: 32px;
+    }
+    .speech-bubble:after{
+        left: 25%;
+    }
+  
+}
+
+
+@media(max-width: 500px){
+    .info-box{
+        width: 93%;
+        height: auto;
+    }
+    .technologies-div{
+        width: 100%;
+        padding-left: 16px;
+    }
+    .content{
+        padding-left: 16px;
+        margin-top: 550px;
+    }
+    .sub-header{
+        margin-top: 12px;
+    }
+   
+}

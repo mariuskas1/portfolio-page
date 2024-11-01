@@ -1,11 +1,15 @@
-@if(projectRowClicked && openedProjectData){
-    <div class="modal-bg" (click)="hideModal()">
-        <div class="project-modal" (click)="$event.stopPropagation()">
+@if(openedProjectData){
+    <div class="modal-bg" [ngClass]="{'hide': !projectRowClicked, 'show': projectRowClicked}" (click)="hideModal()">
+        <div class="project-modal" (click)="$event.stopPropagation()" [@slideInOut]="projectRowClicked ? 'in' : 'out'">
             <div class="project-modal-header">
                 <button class="close-btn" (click)="hideModal()"><img src="./../../../assets/img/close_small.png" class="close-img"></button>
             </div>
 
             <div class="project-modal-content">
+                <div class="mobile-preview-div">
+                    <img class="project-img-large" src="{{openedProjectData.image}}" class="mobile-preview-img">
+                </div>
+                
                 <div class="info-div">
                     <span class="project-number">0{{openedProjectData.number}}</span>
                     <span class="project-name">{{openedProjectData.name}}</span>
@@ -26,7 +30,7 @@
                 </div>
 
                 <div class="large-preview-div">
-                    <img src="{{openedProjectData.image}}" alt="">
+                    <img class="project-img-large" src="{{openedProjectData.image}}" alt="">
                 </div>
             </div>
 
@@ -37,5 +41,7 @@
         </div>
     
     </div>
+
 }
+   
  
