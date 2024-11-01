@@ -14,9 +14,14 @@
 .footer{
     width: 100%;
     max-width: 1440px;
-    @include displayFlex($jc: space-between);
+   
     padding: 40px;
     
+}
+
+.footer-content{
+    width: 100%;
+    @include displayFlex($jc: space-between);
 }
 
 .footer-left, .footer-center, .footer-right{
@@ -48,4 +53,51 @@ a:hover{
     font-family: 'Fira Code';
     color: $green;
     font-size: 16px;
+}
+
+.mobile-footer-div{
+    display: none;
+    width: 100%;
+    
+    
+}
+
+
+@media(max-width: 775px){
+    
+    .footer{
+        padding-top: 500px;
+        margin-top: 500px;
+    }
+}
+
+@media(max-width: 600px){
+    .footer {
+        padding: 12px;
+        padding-top: 500px;
+       
+       
+    }
+    .footer-center{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .mobile-footer-div{
+        @include displayFlex();
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width: 500px){
+    .footer{
+        margin-top: 600px;
+    }
+}
+@media(max-width: 450px){
+    .footer{
+        margin-top: 700px;
+    }
 }

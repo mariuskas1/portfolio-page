@@ -1,13 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './modal.component.html',
-  styleUrl: './modal.component.scss'
+  styleUrl: './modal.component.scss',
+  animations: [
+    trigger('slideInOut', [
+      state('in', style({ translate: '0%' })),
+      state('out', style({ translate:  '100%'})),
+      transition('in => out', animate('200ms ease-out')),
+      transition('out => in', animate('200ms ease-in'))
+    ])
+  ]
 })
 export class ModalComponent {
   @Input() projectRowClicked?:boolean;

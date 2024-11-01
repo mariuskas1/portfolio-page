@@ -10,11 +10,25 @@
                 <a href="#skills">{{'nav.skills' | translate}}</a>
                 <a href="#projects">{{'nav.projects' | translate}}</a>
             </div>
+            
+            <img src="./../../../assets/img/logo_mobile.png" class="mobile-logo">
+            
+            <img src="./../../../assets/img/menu.png" class="mobile-menu-img" (click)="openMenu()">
+            
+          
+            
+
             <div class="logo">
                 <img src="./../../../assets/img/Logo_dark(1).png" class="logo">
             </div>
         </nav>
     </div>
     
+    <app-mobile-menu 
+        [currentLanguage]="currentLanguage" 
+        (languageToggle)="toggleLanguage($event)" 
+        [mobileMenuOpen]="mobileMenuOpen"
+        (menuClose)="closeMenu()">
+    </app-mobile-menu>
 
 

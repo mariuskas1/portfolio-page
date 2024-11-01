@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 .marquee{
-    width: calc(100% + 35px);
+    width: calc(100% + 80px);
     height: 62px;
     position: absolute;
     bottom: 40px;
@@ -52,12 +52,29 @@
 }
 
 
-@media(max-height: 600px){
+@media(max-height: 500px){
     .marquee{
         bottom: 24px;
-        height: 40px;
+        height: 48px;
     }
     .marquee-text{
         font-size: 24px;
     }
+    
+}
+
+@media(max-width: 1000px){
+    .marquee-text{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 650px){
+   .marquee{
+    height: 48px;
+    bottom: 32px;
+   }
+   .marquee-text{
+    font-size: 24px;
+   }
 }

@@ -73,6 +73,7 @@ h3{
 
 .project-technologies{
     @include displayFlex();
+    flex-wrap: wrap;
 }
 
 .technology-span{
@@ -139,3 +140,94 @@ h3{
 }
 
 
+@media(max-width:950px){
+    .projects-div{
+        width: 500px;
+    }
+    .projects-preview-div{
+        width: 200px;
+    }
+    .content{
+        padding-left: 40px;
+    }
+}
+@media(max-width:850px){
+    .technology-span{
+        font-size: 12px;
+    }
+    .projects-div{
+        width: 500px;
+        z-index: 120;
+    }
+    .projects-preview-div{
+        width: 180px;
+        margin-left: 32px;
+    }
+    .project-img-small{
+        width: 170px;
+    }
+    .small-project-bg{
+        width: 170px;
+    }
+   
+}
+
+
+@media(max-width: 775px){
+    .content{
+        padding-top: 750px;
+        margin-top: 800px;
+        width: 80%;
+        
+    }
+    .projects-preview-div{
+        display: none;
+    }
+   
+}
+
+@media(max-width: 700px){
+    .content{
+        width: 100%;        
+        @include displayFlex($ai: flex-start);
+        flex-direction: column;
+        padding-left: 64px;
+    }
+}
+
+
+@media(max-height: 600px){
+    #projects-section{
+        height: 100%;
+        padding-top: 40px;
+    }
+  
+}
+
+
+@media(max-width: 600px){
+    .content{
+        padding-left: 32px;       
+    }
+    .description{
+        width: 80%;
+    }
+    .projects-div {
+        width: 90%;
+    }
+    .project-row{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 500px){
+    .content{
+        margin-top: 950px;
+    }
+}
+@media(max-width: 450px){
+    .content{
+        margin-top: 1050px;
+    }
+}

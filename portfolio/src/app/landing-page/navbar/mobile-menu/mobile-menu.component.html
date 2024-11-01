@@ -1,0 +1,16 @@
+
+
+    <div class="mobile-menu-bg" [ngClass]="{'hide': !mobileMenuOpen,'show': mobileMenuOpen}" (click)="closeMenu()">
+        <div class="mobile-menu" [@slideInOut]="mobileMenuOpen ? 'in' : 'out'" (click)="$event.stopPropagation()">
+            <div class="mobile-menu-header"> <img src="./../../../assets/img/menu.png" class="mobile-menu-img" (click)="closeMenu()"></div>
+            <a href="#about">{{'nav.about' | translate}}</a>
+            <a href="#skills">{{'nav.skills' | translate}}</a>
+            <a href="#projects">{{'nav.projects' | translate}}</a>
+            <label class="switch">
+                <input type="checkbox" [checked]="currentLanguage === 'de'" (change)="triggerLanguageToggle($event)">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+
