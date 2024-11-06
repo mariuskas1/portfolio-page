@@ -31,27 +31,7 @@ import { FooterComponent } from "./footer/footer.component";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio';
-
-  currentLanguage = 'en';
-
-  constructor(private translate: TranslateService) {
-    this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-  }
-
-  toggleLanguage(event: Event) {
-    const isGerman = (event.target as HTMLInputElement).checked;
-    const language = isGerman ? 'de' : 'en';
-    this.switchLanguage(language);
-  }
-
-  switchLanguage(language: string) {
-    this.translate.use(language);
-    localStorage.setItem('language', language);
-    this.currentLanguage = language;
-  }
+  
 
 }
 

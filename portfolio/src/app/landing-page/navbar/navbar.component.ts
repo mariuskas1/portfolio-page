@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from './../../../app/services/language.service';
 
 
 @Component({
@@ -15,29 +16,20 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent implements OnInit {
   @Input() currentLanguage!: string;
 
-  constructor(private translate: TranslateService){
-      
-  }
+  constructor(private languageService: LanguageService) {}
+
+  
 
   ngOnInit(): void {
-    // Check if the window object is available
-    if (typeof window !== 'undefined' && window.localStorage) {
-      const savedLanguage = localStorage.getItem('language') || 'en';
-      this.translate.use(savedLanguage);
-      this.currentLanguage = savedLanguage;
-    } else {
-      // Handle case where localStorage is not available (e.g., during server-side rendering)
-      this.currentLanguage = 'en'; // Default to 'en' if localStorage is unavailable
-      this.translate.use(this.currentLanguage);
-    }
+    // Subscribe to language changes
+    this.languageService.currentLanguage$.subscribe(
+      (lang) => (this.currentLanguage = lang)
+    );
   }
 
-    toggleLanguage(event: Event) {
-      const isGerman = (event.target as HTMLInputElement).checked;
-      const language = isGerman ? 'de' : 'en';
-      this.translate.use(language);
-      localStorage.setItem('language', language);
-      this.currentLanguage = language;
+  toggleLanguage(event: Event) {
+    const isGerman = (event.target as HTMLInputElement).checked;
+    this.languageService.toggleLanguage(isGerman);
   }
 
   mobileMenuOpen = false;

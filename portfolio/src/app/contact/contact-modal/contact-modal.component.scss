@@ -1,0 +1,22 @@
+@import './../../../styles.scss';
+
+
+
+.contact-modal {
+    margin-top: 80px;
+    @include displayFlex();
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    margin-left: -150px;
+    height: 100px;
+    width: 300px;
+    border: 1px solid $green;
+    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    z-index: 99999999;
+    font-family: 'Karla';
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 24px;
+}

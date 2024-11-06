@@ -2,11 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { ContactModalComponent } from "./contact-modal/contact-modal.component";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, ContactModalComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -19,6 +20,8 @@ export class ContactComponent {
     email: "",
     message: ""
   };
+
+  formSubmitted = false;
 
   policyAccepted = false;
 
@@ -50,17 +53,19 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      console.log(this.contactData);
+      this.formSubmitted = true;
+      
+      setTimeout(() => {
+        ngForm.resetForm();
+      }, 500)
 
-      ngForm.resetForm();
+      setTimeout(() => {
+        this.formSubmitted = false;
+      }, 3000);
+      
     }
   }
 
-
-  // onSubmit(ngForm:NgForm){
-  //   if(ngForm.valid && ngForm.submitted){
-  //     console.log(this.contactData);
-  //   }
-    
-  // }
 
 }

@@ -67,6 +67,100 @@
         "1": "Web Developer",
         "2": "Leipzig Germany",
         "3": "Legal Notice"
-    }
+    },
+    "contact-msg": "Thanks for your message!",
+
+    "imprint":{
+        "header": "Legal Notice",
+        "header2": "Website Owner",
+        "contact": "Contact:",
+        "c1": "Mail",
+        "c2": "Phone"
+    },
+
+    
+    
+
+        "policy": {
+            "title": "Privacy Policy",
+            "sh1": "Website Owner",
+            "p1": "The owner within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:",
+            "sh2": "Your Data Subject Rights",
+            "p2": "You may exercise the following rights at any time under the contact details provided, in accordance with the EU General Data Protection Regulation (GDPR):",
+            "li1": "Access to your data stored by us and its processing (Art. 15 GDPR),",
+            "li2": "Correction of inaccurate personal data (Art. 16 GDPR),",
+            "li3": "Deletion of your data stored with us (Art. 17 GDPR),",
+            "li4": "Restriction of data processing if we are not yet allowed to delete your data due to legal obligations (Art. 18 GDPR),",
+            "li5": "Objection to the processing of your data by us (Art. 21 GDPR) and",
+            "li6": "Data portability if you have consented to data processing or have entered into a contract with us (Art. 20 GDPR).",
+            "p3": "If you have given us consent, you may revoke it at any time with effect for the future.",
+            "p4": "You can file a complaint at any time with a supervisory authority, e.g., with the competent supervisory authority of the state of your residence or the authority responsible for us as the data controller.",
+            "p5": "A list of supervisory authorities (for the non-public sector) with addresses can be found at:",
+    
+            "sh3": "Processing Activities",
+            "sh4": "Collection of General Information When Visiting Our Website",
+            "p6": "Type and Purpose of Processing",
+            "p7": "When you access our website, i.e., if you do not register or otherwise submit information, general information is automatically collected. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your internet service provider, your IP address, and similar.",
+            "p8": "They are processed specifically to ensure the website is displayed correctly and optimized.",
+            "p9": "We do not use your data to draw conclusions about your person. However, we reserve the right to retrospectively check the server log files if there are concrete indications of unlawful use.",
+    
+            "sh5": "Legal Basis and Legitimate Interest",
+            "p10": "Processing is carried out on the basis of our legitimate interest in improving the stability and functionality of our website, as well as ensuring system security and detecting misuse (Art. 6 para. 1 lit. f GDPR).",
+            "sh6": "Recipients",
+            "p11": "The recipients of the data may be technical service providers who act as processors for the operation and maintenance of our website.",
+    
+            "sh7": "Retention Period",
+            "p12": "Data in server log files is stored in a form that allows the identification of the persons concerned for a maximum of six months unless a security-relevant event occurs (e.g., a DDoS attack).",
+            "p13": "In the event of such an incident, server log files are stored until the security-relevant event has been fully resolved and clarified.",
+    
+            "sh8": "Provision Required or Necessary",
+            "p14": "Providing the aforementioned personal data is neither legally nor contractually required. However, without the IP address, the service and functionality of our website cannot be guaranteed. Furthermore, certain services and features may be unavailable or limited.",
+    
+            "sh9": "Objection",
+            "p15": "Please refer to the information about your right to object under Art. 21 GDPR below.",
+    
+            "sh10": "Contacting Us",
+            "p16": "Type and Purpose of Processing",
+            "p17": "Our website provides a contact form, which can be used for electronic communication. If a user takes advantage of this option, the data entered in the input mask is transmitted to us and stored.",
+            "p18": "Contact can also be made via the provided email addresses. In this case, the user’s personal data transmitted by email is stored. This includes the date and time the email was sent, email address, IP addresses, and information about the servers involved in the email communication.",
+            "p19": "Regardless of the communication method chosen, we collect the content of your inquiry. Your data is stored for the purpose of individual communication with you.",
+    
+            "sh11": "Legal Basis",
+            "p20": "Data processing is based on a legitimate interest (Art. 6 para. 1 lit. f GDPR).",
+            "p21": "Our legitimate interest in processing your data is to enable easy communication with you.",
+            "p22": "If you contact us to request a quote, data processing is carried out to perform pre-contractual measures (Art. 6 para. 1 lit. b GDPR).",
+    
+            "sh12": "Recipients",
+            "p23": "The recipients of the data may be technical service providers who act as processors for the operation and maintenance of our website.",
+    
+            "sh13": "Retention Period",
+            "p24": "Data will be deleted no later than six months after the contact request is processed.",
+            "p25": "If a contractual relationship is established, we are subject to the legal retention periods, which are generally six or ten years due to requirements of proper bookkeeping and tax regulations.",
+    
+            "sh14": "Provision Required or Necessary",
+            "p26": "Providing your personal data is voluntary. However, we can only process your inquiry if you provide us with the necessary data and the reason for the inquiry.",
+    
+            "sh15": "Objection",
+            "p27": "Please refer to the information about your right to object under Art. 21 GDPR below.",
+    
+            "sh16": "Information on Your Right to Object Under Art. 21 GDPR",
+            "sh17": "Right to Object on a Case-by-Case Basis",
+            "p28": "You have the right to object at any time, for reasons arising from your particular situation, to the processing of personal data concerning you, which is carried out on the basis of Art. 6 para. 1 lit. f GDPR (data processing based on a balance of interests); this also applies to profiling based on this provision within the meaning of Art. 4 No. 4 GDPR.",
+            "p29": "If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for the processing that override your interests, rights, and freedoms, or the processing serves to assert, exercise, or defend legal claims.",
+    
+            "sh18": "Recipient of an Objection",
+    
+            "sh19": "Changes to Our Privacy Policy",
+            "p31": "We reserve the right to adjust this privacy policy to ensure it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g., when introducing new services. The new privacy policy will then apply to your next visit.",
+    
+            "sh20": "Questions About Data Protection",
+            "p32": "If you have questions about data protection, please email us at the contact provided above.",
+    
+            "sh21": "Copyright Notice",
+            "p33": "This privacy policy was created with the assistance of activeMind AG "
+
+        }
+    
+    
 
 }
