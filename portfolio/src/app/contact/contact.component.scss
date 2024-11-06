@@ -49,7 +49,7 @@ h4{
 
 .contact-form-div{
     width: 500px;
-    padding-left: 32px;
+    // padding-left: 32px;
     
 }
 
@@ -58,6 +58,7 @@ form{
     flex-direction: column;
     border: none;
     width: 100%;
+    z-index: 9999;
 }
 
 
@@ -69,6 +70,7 @@ form{
     border-bottom: 1px solid $green;
     padding:  24px 32px;
     box-sizing: border-box;
+    z-index: 999999;
 }
 
 #middle-div{
@@ -184,7 +186,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 button{
-    margin-top: 32px;
+    margin-top: 24px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -212,12 +214,11 @@ button:disabled{
     margin-top: 16px;
     height: 14px;
     width: 100%;
-    border: 1px solid white;
     @include displayFlex();
 }
 
 .form-msg{
-    color: $green;
+    color: rgb(255, 60, 60);
     font-family:  'Karla';
     font-size: 12px;
 }
@@ -264,8 +265,9 @@ button:disabled{
     #contact-content{
         flex-direction: column;
         align-items: center;
-        padding-top: 800px;
-        margin-top: 1000px;
+         padding-top: 800px;
+         margin-top: 1000px;
+       
     }
     .contact-form-div, .contact-info{
         width: 70%;

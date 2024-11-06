@@ -1,7 +1,7 @@
 <div class="normal-bg" id="contact-section">
     <div class="normal-content" id="contact-content">
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact-1">
             <h3>{{ 'contact.title' | translate}}</h3>
             <h4>{{ 'contact.title2' | translate}}</h4>
             <span class="info-subheader">{{ 'contact.title3' | translate}}</span>
@@ -10,19 +10,28 @@
             </span>
         </div>
 
-        <div class="contact-form-div">
+        <div class="contact-form-div" >
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="input-div">
                     <span class="input-caption">{{ 'contact.form.caption1' | translate}}</span>
-                    <input spellcheck="false" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'contact.form.placeholder1' | translate}}" required >
+                    <input spellcheck="false" [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name" placeholder="{{ 'contact.form.placeholder1' | translate}}" required >
+                    @if (!name.valid && contactForm.submitted){
+                        <span class="form-msg">Please enter a name</span>
+                    }
                 </div>
                 <div class="input-div" id="middle-div">
                     <span class="input-caption">{{ 'contact.form.caption2' | translate}}</span>
-                    <input spellcheck="false" [(ngModel)]="contactData.email" name="email" type="email" id="email" placeholder="{{ 'contact.form.placeholder2' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    <input spellcheck="false" [(ngModel)]="contactData.email" #mail="ngModel" name="email" type="email" id="email" placeholder="{{ 'contact.form.placeholder2' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                    @if (!mail.valid && contactForm.submitted){
+                        <span class="form-msg">Please enter a valid mail</span>
+                    }
                 </div>
                 <div class="input-div">
                     <span class="input-caption">{{ 'contact.form.caption3' | translate}}</span>
                     <textarea spellcheck="false" #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="{{ 'contact.form.placeholder3' | translate}}" required></textarea>
+                    @if (!message.valid && contactForm.submitted){
+                        <span class="form-msg">Please enter a message</span>
+                    }
                 </div>
 
                 <div class="checkbox-div">
@@ -31,14 +40,8 @@
                         <span class="checkmark"></span>
                     </label>
 
-                    <span class="checkbox-text">{{ 'contact.form.policy1' | translate}} <a href="">{{ 'contact.form.policy2' | translate}}</a> {{ 'contact.form.policy3' | translate}}</span> 
+                    <span class="checkbox-text">{{ 'contact.form.policy1' | translate}} <a href="policy" target="_blank">{{ 'contact.form.policy2' | translate}}</a> {{ 'contact.form.policy3' | translate}}</span> 
                 </div>
-
-                <!-- <div class="form-msg-div">
-                    @if (!message.valid && message.touched){
-                        <span class="form-msg">Please enter a message</span>
-                    }
-                </div> -->
                 
 
                 <button type="submit" [disabled]="!policyAccepted">{{ 'contact.form.button' | translate}}</button>
@@ -50,3 +53,8 @@
 
     </div>
 </div>
+
+
+<app-contact-modal [formSubmitted]="formSubmitted"></app-contact-modal>
+
+

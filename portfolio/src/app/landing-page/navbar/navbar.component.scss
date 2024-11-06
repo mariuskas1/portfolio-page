@@ -66,8 +66,16 @@ nav {
   height: 48px;
   margin-right: 32px;
   @include displayFlex();
+  z-index: 500;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
+a{
+  z-index: 500;
+}
 
 
 .switch input {
@@ -150,6 +158,10 @@ input:checked + .slider::after {
   height: 48px;
   width: 48px;
   margin-left: 16px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 

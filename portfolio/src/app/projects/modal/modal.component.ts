@@ -42,7 +42,7 @@ export class ModalComponent {
       "technologies": ["JavaScript", "HTML", "CSS", "Firebase"],
       "links": {
         "test": "https://example.com/project-alpha",
-        "git": "https://github.com/username/project-alpha"
+        "git": "https://github.com/mariuskas1/join"
       },
       "image": "./../../../assets/img/projects/join.png"
     },
@@ -53,7 +53,7 @@ export class ModalComponent {
       "technologies": ["Javascript", "HTML", "CSS"],
       "links": {
         "test": "https://example.com/project-beta",
-        "git": "https://github.com/username/project-beta"
+        "git": "https://github.com/mariuskas1/sharkie"
       },
       "image": "./../../../assets/img/projects/polloloco.png"
     },
