@@ -4,7 +4,7 @@
     width: calc(100% + 80px);
     height: 62px;
     position: absolute;
-    bottom: 40px;
+    bottom: 48px;
     left: -56px;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(5.300000190734863px);
@@ -25,7 +25,7 @@
     @include displayFlex();
     gap: 80px;
     padding-left: 80px;
-    animation: marquee 20s linear infinite;
+    animation: marquee 30s linear infinite;
     width: max-content;
 }
 
@@ -37,7 +37,7 @@
 
 .marquee-text{
     font-family: 'Karla';
-    font-size: 28px;
+    font-size: 32px;
     background-color: transparent;
     color: $green;
     line-height: 38.4px;
@@ -71,7 +71,7 @@
 
 @media(max-width: 650px){
    .marquee{
-    height: 48px;
+    height: 53px;
     bottom: 32px;
    }
    .marquee-text{

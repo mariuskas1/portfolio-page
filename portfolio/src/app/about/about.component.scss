@@ -2,8 +2,8 @@
 
 .content{
     @include displayFlex();
-    width: 80vw;
-    height: 85vh;
+    width: 1400px;
+    height: 708px;
    
 }
 
@@ -23,31 +23,51 @@
 
 
 .photo{
-    width: 450px;
-    height: 450px;
+    aspect-ratio: 1/1;
+    width: 568px;
+    height: auto;
     border-radius: 20px;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container::after {
+    content: "Foto kommt noch";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $green; 
+    font-family: 'Karla';
+    font-size: 100px; 
+    font-weight: 800;
+    text-align: center;
+  }
+
 
 .info-box{
-    height: 450px;
-    width: 450px;
+    aspect-ratio: 1/1;
+    width: 568px;
+    height: auto;
     border: 1px solid $green;
     border-radius: 20px;
     background: rgba(61, 207, 182, 0.1);
     backdrop-filter: blur(4px);
-    padding: 24px;
+    padding: 32px;
     margin-top: 12px;
     
 }
 
 .info-text{
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     font-family: 'Karla';
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 1);
-    line-height: 18px;
+    line-height: 21px;
     text-align: justify;
     display: block;
 }
@@ -59,15 +79,15 @@
 }
 
 .info-row-img{
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
 }
 
 .info-row-text{
     font-family: 'Karla';
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 21px;
     color: rgba(255, 255, 255, 0.8);
 
     &:hover{
@@ -78,77 +98,35 @@
 
 
 
-@media(max-width: 1150px){
+@media(max-width: 1200px){
     .content{
         width: 100%;
         height: 100%;
-       
     }
 
-   
-}
-
-@media(max-width: 1000px){
-    .photo{
-        width: 420px;
-        height: 420px;
-    }
-    
-    .info-box{
-        height: 420px;
-        width: 420px;        
-    }
-
-    .info-text{
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-    .info-row-text{
-        font-size: 12px;
-    }
-    .info-row{
-        margin-bottom: 8px;
-    }
-}
-
-@media(max-width: 900px){
-    .photo{
-        width: 350px;
-        height: 350px;
-    }
-    
-    .info-box{
-        height: 380px;
-        width: 380px;     
-        padding: 32px;
+    .photo, .info-box{
+        width: 95%;
     }
 
     .scroll-div {
-        height: 85%;
-        width: calc(100% + 32px);
-        overflow: auto; 
-        padding-bottom: 32px;
-        padding-right: 8px;
-        border: none;
-    }
-
+                 height: 85%;
+                width: calc(100% + 32px);
+                 overflow: auto; 
+                 padding-bottom: 32px;
+                 padding-right: 8px;
+                 border: none;
+             }
    
-
-    .info-text{
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-    .info-row{
-        margin-bottom: 4px;
-    }
 }
 
 
-@media(max-width: 775px){
+
+
+@media(max-width: 900px){
     .content{
         flex-direction: column;
         height: auto;
-        padding-top: 500px;
+        padding-top: 450px;
         
     }
 
@@ -168,64 +146,22 @@
     overflow: hidden;
    }
 
-   .info-row-text{
-    font-size: 14px;
-   }
-   .info-row{
-    margin-bottom: 12px;
-   }
-
-    .info-text{
-        margin-top: 24px;
-        margin-bottom: 24px;
-        font-size: 14px;
-        line-height: 18px;
-    }
-
     .right{
         margin-top: 32px;
     }
     .photo, .info-box{
-        width: 450px;
-        height: 450px;
+        width: 568px;
+        height: 568px;
     }
 }
 
 
-@media(max-height: 600px){
-    .content{
-        height: 100%;
-    }
+@media(max-width: 600px){
     .photo, .info-box{
-        width: 400px;
-        height: 400px;
-    }
-    .info-text{
-        margin-top: 12px;
-        margin-bottom: 16px;
-    }
-    .info-row-text{
-        font-size: 12px;
-    }
-    .info-row{
-        margin-bottom: 4px;
-    }
-}
-
-@media(max-width: 500px){
-    // .box{
-    //     width: 90%;
-    // }
-    .photo, .info-box{
-        width: 90%;
+        width: 100%;
         height: auto;
-
     }
-    .right{
-        margin-left: 40px;
+    .info-box{
+        aspect-ratio: unset;
     }
-    .scroll-div{
-        padding-bottom: 0;
-    }
-    
 }
