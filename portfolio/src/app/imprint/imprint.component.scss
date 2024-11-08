@@ -7,19 +7,13 @@
     .normal-bg{
         height: 100vh !important;
     }
-    .menu a{
+    .menu a, .mobile-menu a{
         display: none;
 
     }
     .footer-bg{
         position: fixed;
         bottom: 0;
-    }
-    .footer{
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-        padding-bottom: 16px !important;
-        padding-top: 16px !important;
     }
     
 }
@@ -32,10 +26,11 @@
     border: none;
     color: white;
     font-family: 'Karla';
+    padding-top: 40px;
 
     p{
-        font-size: 12px;
-        padding-left: 8px;
+        font-size: 18px;
+        padding-left: 16px;
     }
     a{
         text-decoration: none;
@@ -43,15 +38,14 @@
     }
 
     table{
-        font-size: 12px;
+        font-size: 18px;
+        margin-left: 16px;
 
-        td{
-            padding-left: 8px;
-        }
     }
 }
 
 .subheader{
+    padding-left: 16px;
     font-size: 20px;
     font-weight: 600;
     margin-top: 24px;
@@ -60,25 +54,44 @@
 }
 
 .contact{
+    padding-left: 16px;
     display: block;
     margin-top: 12px;
     margin-bottom: 8px;
     font-size: 18px;
 }
 
-
-
-@media(max-width: 650px){
+@media(max-width: 900px){
     :host ::ng-deep{
-        .menu{
-            display: block !important;
-          }
-          .mobile-menu-img {
-            display: none !important;
-          }
+        .footer{
+            padding-top: 0px !important;
+            margin-top: 0px !important;
+        }
     }
+}
+
+
+@media(max-width: 400px){
+    *{
+        padding-left: 0 !important;
+    }
+    table{
+        margin-left: 0;
+    }
+}
+
+
+// @media(max-width: 650px){
+//     :host ::ng-deep{
+//         // .menu{
+//         //     display: block !important;
+//         //   }
+//     //       .mobile-menu-img {
+//     //         display: none !important;
+//     //       }
+//     // }
    
-  }
+//   }
 
 
 

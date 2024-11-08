@@ -25,11 +25,11 @@ export class ContactComponent {
 
   policyAccepted = false;
 
-  mailTest = true;
+  mailTest = false;
 
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://marius-kasparek.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -44,7 +44,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.displayModal();
             ngForm.resetForm();
           },
           error: (error) => {
@@ -53,7 +53,6 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log(this.contactData);
       this.formSubmitted = true;
       
       setTimeout(() => {
@@ -65,6 +64,13 @@ export class ContactComponent {
       }, 3000);
       
     }
+  }
+
+  displayModal(){
+    this.formSubmitted = true;
+    setTimeout(() => {
+      this.formSubmitted = false;
+    }, 3000);
   }
 
 

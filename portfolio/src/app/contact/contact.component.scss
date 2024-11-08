@@ -3,7 +3,7 @@
 
 
 #contact-section{
-    height:90vh;
+    height: 80vh;
 }
 
 .normal-content{
@@ -12,14 +12,15 @@
 }
 
 h4{
-    line-height: 48px;
+    line-height: 64px;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+     max-width: 90%;
 }
 
 .info-subheader{
     font-family: 'Fira Code';
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: $green;
 
@@ -28,11 +29,11 @@ h4{
 .info-text{
     color: white;
     font-family: 'Karla';
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     display: block;
     margin-top: 16px;
-    width: 90%;
+    width: 95%;
     
 }
 
@@ -42,13 +43,13 @@ h4{
 
 
 .contact-info{
-    width: 500px;
+    width: 568px;
     height: 100%;
     
 }
 
 .contact-form-div{
-    width: 500px;
+    width: 616px;
     // padding-left: 32px;
     
 }
@@ -68,7 +69,7 @@ form{
     width: 100%;
     border-top: 1px solid $green;
     border-bottom: 1px solid $green;
-    padding:  24px 32px;
+    padding:  32px;
     box-sizing: border-box;
     z-index: 999999;
 }
@@ -81,7 +82,8 @@ form{
     font-family: 'Fira Code';
     color: $green;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -100,7 +102,7 @@ input[type=text],[type=email],textarea{
 input::placeholder, textarea::placeholder{
     color: rgb(255, 255, 255, 0.8);
     font-family: 'Karla';
-    font-size: 14px;
+    font-size: 18px;
 }
 
 input:-webkit-autofill, textarea:-webkit-autofill {
@@ -125,11 +127,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .checkbox-div{
     @include displayFlex($jc: flex-start);
-    margin-top: 32px;
+    margin-top: 40px;
     width: 100%;
     padding-left: 8px;
-    
-    
 }
 
 
@@ -148,8 +148,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* Style the custom checkmark box */
 .checkbox-container .checkmark {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: transparent;
     border: 1.5px solid $green;
     border-radius: 2px;
@@ -167,7 +167,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .checkbox-text{
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Karla';
     display: block;
     
@@ -186,14 +186,14 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 button{
-    margin-top: 24px;
+    margin-top: 40px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
-
+    font-size: 16px;
     border-radius: 24px;
-    height: 40px;
-    width: 110px;
+    height: 48px;
+    width: 139px;
     transition: all 125ms ease;
 }
 
@@ -224,43 +224,16 @@ button:disabled{
 }
 
 
-
-
-@media(max-width: 1100px){
+@media(max-width: 1300px){
     .contact-form-div, .contact-info{
-        width: 450px;
-    }
-   
-}
-@media(max-width: 1000px){
-    .contact-form-div, .contact-info{
-        width: 400px;
-    }
-}
-@media(max-width: 850px){
-    .contact-form-div, .contact-info{
-        width: 350px;
-    }
-    .input-div{
-        padding: 20px;
-    }
+        width: 45%;
 
-    input[type=text],[type=email],textarea{
-      
-        min-height: 24px;
-        max-height: 40px;
-    }
-
-    button{
-        z-index: 300;
     }
 }
 
 
 
-
-
-@media(max-width: 775px){
+@media(max-width: 900px){
    
     #contact-content{
         flex-direction: column;
@@ -270,48 +243,37 @@ button:disabled{
        
     }
     .contact-form-div, .contact-info{
-        width: 70%;
+        width: 95%;
     }
     .contact-form-div{
         padding-left: 0;
         margin-top: 40px;
         margin-bottom: 140px;
     }
-}
 
-
-@media(max-height: 600px){
-    #contact-section{
-        height: 100%;
-        padding: 80px;
-        
+    button{
+        z-index: 300;
     }
-}
 
-@media(max-width:700px){
-    .contact-form-div, .contact-info{
-        width: 80%;
-    }
-}
-
-@media(max-width: 600px){
-    #contact-content{
-        align-items: flex-start;
-        margin-top: 1050px;
-        padding-left: 32px;
-    }
-    .contact-info{
-        width: 95%;
+    h4{
+        line-height: 48px;
     }
 }
 
 @media(max-width: 500px){
-    #contact-content{
-        margin-top: 1200px;
+    textarea{
+        width: 100%;
     }
 }
-@media(max-width: 450px){
+
+@media(max-width: 400px){
     #contact-content{
-        margin-top: 1350px;
+         margin-top: 1250px;
+       
+    }
+}
+@media(max-width: 350px){
+    #contact-content{
+         margin-top: 1300px;
     }
 }

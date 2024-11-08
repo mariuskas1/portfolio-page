@@ -14,7 +14,12 @@
                     <span class="project-number">0{{openedProjectData.number}}</span>
                     <span class="project-name">{{openedProjectData.name}}</span>
                     <span class="project-subheader">{{ 'projects.modal.subheader' | translate}}</span>
-                    <span class="project-description">{{openedProjectData.description}}</span>
+                    @if(currentLanguage === 'en'){
+                        <span class="project-description">{{openedProjectData.descriptionEN}}</span>
+                    } @else if(currentLanguage === 'de'){
+                        <span class="project-description">{{openedProjectData.descriptionDE}}</span>
+                    }
+                    
                     <div class="technologies-div-large">
                         @for (technology of openedProjectData.technologies; track $index) {
                             <div class="technology-div">

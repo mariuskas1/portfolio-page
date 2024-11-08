@@ -45,7 +45,7 @@
     },
     "contact":{
         "title": "Kontaktieren Sie mich",
-        "title2": "Lassen Sie uns zusammenarbeiten",
+        "title2": "Lassen Sie uns zusammen arbeiten",
         "title3": "Sie haben ein Problem zu lösen?",
         "text1": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
         "text2": "Sie benötigen einen Fullstack-Entwickler?",
@@ -156,8 +156,8 @@
         "p32": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an den oben genannten Verantwortlichen.",
 
         "sh21": "Urheberrechtliche Hinweise",
-        "p33": "Diese Datenschutzerklärung wurde mit Hilfe der activeMind AG erstellt - den Experten für",
-        "p34": "externe Datenschutzbeauftragte"
+        "p33": "Diese Datenschutzerklärung wurde mit Hilfe der activeMind AG erstellt."
+        
 
        
     }
