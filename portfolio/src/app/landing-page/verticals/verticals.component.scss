@@ -190,3 +190,16 @@
         height: 100px;
     }
 }
+
+
+@media(max-width: 400px) and (max-height: 750px){
+  .vertical-bar-left{
+    height: 180px;
+  }
+}
+
+@media(max-width: 400px) and (max-height: 700px){
+    .vertical-bar-left{
+        height: 170px;
+      }
+}

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-skills',
@@ -8,8 +9,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {
-
+export class SkillsComponent implements OnInit {
+   ngOnInit(): void {
+     AOS.init();
+   }
 
   shownTechnologies = "frontend";
 

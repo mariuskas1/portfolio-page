@@ -4,6 +4,7 @@
     @include displayFlex();
     width: 1400px;
     height: 708px;
+    padding-top: 50px;
    
 }
 
@@ -163,5 +164,11 @@
     }
     .info-box{
         aspect-ratio: unset;
+    }
+}
+
+@media(max-width: 400px) and (max-height: 750px){
+    .content{
+        margin-top: 200px;
     }
 }

@@ -251,3 +251,13 @@ h3{
         margin-top: 1900px;
     }
 }
+
+
+@media(max-width: 400px) and (max-height: 750px){
+    .content{
+        margin-top: 1300px;
+    }
+    h4, .description{
+        padding-left: 8px;
+    }
+}
