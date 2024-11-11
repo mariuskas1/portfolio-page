@@ -13,6 +13,9 @@
         position: fixed;
         bottom: 0;
     }
+    .footer{
+        margin-top: 0 !important;
+    }
     
 }
 
@@ -21,11 +24,12 @@
     position: fixed;
     top: 140px;
     width: 80%;
-    height: 60% !important;
+    height: 60%;
     border: none;
     color: white;
     font-family: 'Karla';
     overflow: auto;
+    max-width: 1920px;
 
     p{
         font-size: 16px;
@@ -69,20 +73,10 @@
   }
 
 
-@media(max-height: 700px){
-    .normal-bg{
-        overflow: unset;
-    }
-
+@media(max-height: 750px){
     .policy-div{
-        height: 50% !important;
+        height: 50% ;
     
-        p{
-            font-size: 12px;
-        }
     
-        li{
-            font-size: 12px;
-        }
     }
 }

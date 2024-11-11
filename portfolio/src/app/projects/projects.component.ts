@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ModalComponent } from "./modal/modal.component";
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from "aos";
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +10,11 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+
+    ngOnInit(): void {
+      AOS.init();
+    }
 
     hoveredProject: number | null = null;
 

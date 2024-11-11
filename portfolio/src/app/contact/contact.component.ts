@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { ContactModalComponent } from "./contact-modal/contact-modal.component";
+import AOS from "aos";
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,11 @@ import { ContactModalComponent } from "./contact-modal/contact-modal.component";
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   http = inject(HttpClient);
 

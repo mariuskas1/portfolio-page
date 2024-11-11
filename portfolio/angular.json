@@ -37,6 +37,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/aos/dist/aos.css",
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
