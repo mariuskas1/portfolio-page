@@ -3,6 +3,15 @@
 .content{
     width: 1400px;
     @include displayFlex();
+    
+}
+
+#skills{
+    position: absolute;
+    top: -300px; 
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .info-box{
@@ -165,15 +174,15 @@
 
 #growth .growth-div{
     // display: block;
-    top: -98px;
-    left: -12px;
+    top: -108px;
+    left: -22px;
     
 }
 
 .growth-div .speech-bubble{
-    width: 160px;
-    height: 100px;
-    // padding: 4px;
+    width: 188px;
+    height: 110px;
+    padding: 8px;
     @include displayFlex();
 }
 
@@ -224,7 +233,7 @@
     font-family: 'Karla';
     font-size: 16px;
     text-align: center;
-    width: 90%;
+    // width: 90%;
 }
 
 .bubble-icon{
@@ -308,6 +317,9 @@
         margin-top: 24px;
     }
   
+    #skills{
+        top: 250px;
+    }
     
 }
 

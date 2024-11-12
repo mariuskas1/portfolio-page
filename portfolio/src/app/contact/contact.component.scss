@@ -146,7 +146,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     user-select: none;
 }
 
-/* Style the custom checkmark box */
+/* Base styles for the checkmark box */
 .checkbox-container .checkmark {
     width: 20px;
     height: 20px;
@@ -161,9 +161,30 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* Show checkmark when checked */
 .checkbox-container input[type="checkbox"]:checked + .checkmark {
-    background-color: $green; /* Color when checked */
+    background-color: transparent;
     border-color: $green;
 }
+
+/* Add the checkmark using ::after */
+.checkbox-container .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0;
+    width: 6px;
+    height: 12px;
+    border: solid $green;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 125ms ease;
+}
+
+/* Display the checkmark when the checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+}
+
 
 .checkbox-text{
     color: white;
