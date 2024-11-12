@@ -4,15 +4,22 @@
     @include displayFlex();
     width: 1400px;
     height: 708px;
-    padding-top: 50px;
+    padding-top: 56px;
    
+}
+
+#about{
+    position: absolute;
+    top: 950px; 
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .left{
     @include displayFlex($ai: flex-start);
     width: 50%;
     height: 100%;
-    
 }
 
 .right{
@@ -170,5 +177,12 @@
 @media(max-width: 400px) and (max-height: 750px){
     .content{
         margin-top: 200px;
+    }
+}
+
+
+@media(max-height: 750px){
+    #about{
+        top: 750px;
     }
 }

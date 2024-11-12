@@ -1,7 +1,9 @@
 <div class="normal-bg">
-    <div class="normal-content" >
-        <div class="content" id="skills-1">
+    <div class="normal-content"  >
+        <div class="content" >
+           
             <div class="box" data-aos="zoom-in-right" data-aos-duration="500" >
+                <a id="skills"></a>
                 <h3 >{{ 'skills.title' | translate }}</h3>
                 <div class="info-box">
                    <h4>{{ 'skills.title2' | translate }}</h4>
@@ -21,7 +23,7 @@
                     <span class="technologies-header">Frontend {{ 'skills.technologies' | translate }}</span>
                     <div class="skill-icons-container">
                         @for (skill of frontendSkills; track $index) {
-                            <div class="icon-box" id="{{ skill.id }}" data-aos="flip-up" data-aos-duration="200">
+                            <div class="icon-box" id="{{ skill.id }}" data-aos="flip-up" data-aos-duration="500">
                                 <img src="{{ skill.image }}" class="skill-icon" >
                                 <span class="icon-description">{{ skill.name }}</span>
 
@@ -52,7 +54,7 @@
                     <span class="technologies-header">Backend {{ 'skills.technologies' | translate }}</span>
                     <div class="skill-icons-container">
                         @for (skill of backendSkills; track $index) {
-                            <div class="icon-box" id="{{ skill.id }}">
+                            <div class="icon-box" id="{{ skill.id }}" data-aos="flip-up" data-aos-duration="500">
                                 <img src="{{ skill.image }}" class="skill-icon" >
                                 <span class="icon-description">{{ skill.name }}</span>
                             </div>

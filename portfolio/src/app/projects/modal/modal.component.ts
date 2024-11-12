@@ -71,18 +71,18 @@ export class ModalComponent implements OnInit {
       },
       "image": "./../../../assets/img/projects/sharkie.png"
     },
-    {
-      "number": 3,
-      "name": "Next Project",
-      "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
-      "links": {
-        "test": "marius-kasparek.de",
-        "git": "https://github.com/username/project-gamma"
-      },
-      "image": "./../../../assets/img/projects/join1.png"
-    }
+    // {
+    //   "number": 3,
+    //   "name": "Next Project",
+    //   "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    //   "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
+    //   "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
+    //   "links": {
+    //     "test": "marius-kasparek.de",
+    //     "git": "https://github.com/username/project-gamma"
+    //   },
+    //   "image": "./../../../assets/img/projects/join1.png"
+    // }
   ];
 
 
