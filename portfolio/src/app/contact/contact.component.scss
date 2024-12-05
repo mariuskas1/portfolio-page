@@ -3,12 +3,13 @@
 
 
 #contact-section{
-    height: 80vh;
+    height: 80dvh;
 }
 
 .normal-content{
     align-items: flex-start;
     border: none;
+    padding-top: 48px;
 }
 
 h4{
@@ -298,13 +299,13 @@ button:disabled{
 
 @media(max-width: 400px){
     #contact-content{
-         margin-top: 1250px;
+         margin-top: 0;
        
     }
 }
 @media(max-width: 350px){
     #contact-content{
-         margin-top: 1300px;
+         margin-top: 0px;
     }
 }
 
