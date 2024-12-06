@@ -13,7 +13,7 @@
     font-family: 'Karla';
     position: fixed;
     top: 0;
-    right: 0;
+    right: -238px;
     z-index: 20000;
     
 }
@@ -52,6 +52,7 @@
     width: 32px;
     height: 21px;
     margin-right: 20px;
+    margin-left: 20px;
     z-index: 99999;
 
     &:hover{

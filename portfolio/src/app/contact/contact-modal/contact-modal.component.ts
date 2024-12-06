@@ -15,7 +15,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         
       })),
       state('visible', style({
-        transform: 'translateY(0)',
+        transform: 'translateY(300%)',
        
       })),
       transition('hidden => visible', [

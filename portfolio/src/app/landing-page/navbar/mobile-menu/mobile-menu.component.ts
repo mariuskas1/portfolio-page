@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './mobile-menu.component.scss',
   animations: [
     trigger('slideInOut', [
-      state('in', style({ translate: '0%' })),
+      state('in', style({ translate: '-100%' })),
       state('out', style({ translate:  '100%'})),
       transition('in => out', animate('200ms ease-out')),
       transition('out => in', animate('200ms ease-in'))

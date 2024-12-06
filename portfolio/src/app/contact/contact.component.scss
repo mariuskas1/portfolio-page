@@ -98,6 +98,7 @@ input[type=text],[type=email],textarea{
     resize: vertical;
     min-height: 32px;
     max-height: 64px;
+    font-size: 18px;
 }
 
 input::placeholder, textarea::placeholder{
