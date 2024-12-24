@@ -1,21 +1,25 @@
 @import './../../styles.scss';
 
+:host{
+    margin-top: 150px;
+}
+
 .content{
-    width: 1400px;
+    width: 1440px;
     @include displayFlex();
-    
+    position: relative;
 }
 
 #skills{
     position: absolute;
-    top: -300px; 
+    top: -100px;
     width: 0;
     height: 0;
     overflow: hidden;
 }
 
 .info-box{
-    height: 540px;
+    height: 568px;
     width: 540px;
     border: 1px solid $green;
     border-radius: 20px;
@@ -298,17 +302,17 @@
          flex-direction: column;
          height: auto;
         
-        margin-top: 700px;
+        // margin-top: 700px;
     }
     .info-box{
         width: 568px;
         height: 500px;
     }
    
-    .box{
-        margin-top: 250px;
-        padding-top: 400px;
-    }
+    // .box{
+    //     margin-top: 250px;
+    //     padding-top: 400px;
+    // }
     .technologies-div{
         width: 568px;
         // margin-top: 40px;
@@ -384,12 +388,13 @@
 }
 
 
-@media(max-width: 400px) and (max-height: 750px){
-    .content{
-        margin-top: 1300px;
-    }
-    .skill-icons-container{
-        padding-left: 24px;
-        gap: 48px;
-    }
-}
+// @media(max-width: 400px) and (max-height: 750px){
+//     .content{
+//         margin-top: 1300px;
+//     }
+//     .skill-icons-container{
+//         padding-left: 24px;
+//         gap: 48px;
+//     }
+// }
+

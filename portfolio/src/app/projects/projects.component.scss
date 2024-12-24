@@ -1,9 +1,13 @@
 @import './../../styles.scss';
 
 
-#projects-section{
-    height: 90dvh;
+:host{
+    margin-top: 150px;
 }
+
+// #projects-section{
+//     height: 90dvh;
+// }
 
 .content{
     width: 1250px;
@@ -166,11 +170,11 @@ h3{
 
 
 @media(max-width: 900px){
-    .content{
-        margin-top: 1550px;
+    // .content{
+    //     margin-top: 1550px;
 
        
-    }
+    // }
     .projects-div{
         z-index: 300;
         margin-top: 32px;
@@ -241,23 +245,19 @@ h3{
 }
 
 
-@media(max-width: 400px){
-    .content{
-        margin-top: 1750px;
-    }
-}
+// @media(max-width: 400px){
+//     // .content{
+//     //     margin-top: 1750px;
+//     // }
+// }
 
-@media(max-width: 35px){
-    .content{
-        margin-top: 1900px;
-    }
-}
+
 
 
 @media(max-width: 400px) and (max-height: 750px){
-    .content{
-        margin-top: 1300px;
-    }
+    // .content{
+    //     margin-top: 1300px;
+    // }
     h4, .description{
         padding-left: 8px;
     }
