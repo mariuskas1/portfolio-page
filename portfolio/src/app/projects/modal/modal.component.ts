@@ -73,7 +73,7 @@ export class ModalComponent implements OnInit {
     },
     // {
     //   "number": 3,
-    //   "name": "Next Project",
+    //   "name": "DABubble",
     //   "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     //   "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
     //   "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
