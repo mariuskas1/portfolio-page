@@ -160,13 +160,11 @@ h3{
     }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1050px){
     .projects-preview-div{
-        margin-left: 24px;
+        display: none;
     }
 }
-
-
 
 
 @media(max-width: 900px){

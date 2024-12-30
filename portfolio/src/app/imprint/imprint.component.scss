@@ -7,6 +7,7 @@
     .normal-bg{
         max-height: unset;
         height: 100dvh !important;
+        flex-direction: column;
     }
     .menu a, .mobile-menu a{
         display: none;
@@ -17,7 +18,12 @@
         bottom: 0;
     }
     
-    
+}
+
+app-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .imprint{

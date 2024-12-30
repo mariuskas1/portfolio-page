@@ -41,23 +41,7 @@
     border-radius: 20px;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .image-container::after {
-    content: "Foto kommt noch";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $green; 
-    font-family: 'Karla';
-    font-size: 100px; 
-    font-weight: 800;
-    text-align: center;
-  }
+
 
 
 .info-box{
@@ -110,9 +94,9 @@
 
 
 
-@media(max-width: 1200px){
+@media(max-width: 1300px){
     .content{
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
 
@@ -121,14 +105,13 @@
     }
 
     .scroll-div {
-                 height: 85%;
-                width: calc(100% + 32px);
-                 overflow: auto; 
-                 padding-bottom: 32px;
-                 padding-right: 8px;
-                 border: none;
-             }
-   
+        height: 85%;
+        width: calc(100% + 32px);
+        overflow: auto; 
+        padding-bottom: 32px;
+        padding-right: 8px;
+        border: none;
+     } 
 }
 
 

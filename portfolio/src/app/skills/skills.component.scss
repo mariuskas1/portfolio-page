@@ -245,6 +245,19 @@
     height: 20px;
 }
 
+
+@media(max-width: 1500px){
+    .content{
+        width: 95%;
+    }
+    // .technologies-div{
+    //     width: 50%;
+    //     margin-left: 40px;
+        
+    // }
+}
+
+
 @media(max-width: 1300px) and (min-width: 901px){
     .icon-box{
         width: 80px;
@@ -272,6 +285,17 @@
         left: -22px;
         
     }
+}
+
+@media(max-width: 1000px) {
+    .info-box{
+        width: 100%;
+        height: auto;
+    }
+    .box{
+        width: 60%;
+    }
+    
 }
 
 @media(max-width: 1200px) and (min-width: 901px){
@@ -307,6 +331,9 @@
     .info-box{
         width: 568px;
         height: 500px;
+    }
+    .box{
+        width: unset;
     }
    
     // .box{
