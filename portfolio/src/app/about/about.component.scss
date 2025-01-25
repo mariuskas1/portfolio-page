@@ -34,11 +34,38 @@
 }
 
 
+.image-container{
+    position: relative;
+
+    &:hover .stripes-bg{
+        opacity: 1;
+    }
+
+    &:hover .photo{
+        filter: none;
+    }
+
+
+}
+
+.stripes-bg{
+    position: absolute;
+    top: 32px;
+    left: -32px;
+    z-index: 10;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
 .photo{
+    position: inherit;
     aspect-ratio: 1/1;
     width: 568px;
     height: auto;
     border-radius: 20px;
+    z-index: 500;
+    filter: grayscale(100%);
+    transition: all 200ms ease;
 }
 
 
