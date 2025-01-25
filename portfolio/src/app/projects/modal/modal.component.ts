@@ -74,14 +74,14 @@ export class ModalComponent implements OnInit {
     {
       "number": 3,
       "name": "DABubble",
-      "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
+      "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
+      "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
       "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
       "links": {
         "test": "marius-kasparek.de",
-        "git": "https://github.com/username/project-gamma"
+        "git": "https://github.com/mariuskas1/DABubble"
       },
-      "image": "./../../../assets/img/projects/join1.png"
+      "image": "./../../../assets/img/projects/dabubblescreen.png"
     }
   ];
 
