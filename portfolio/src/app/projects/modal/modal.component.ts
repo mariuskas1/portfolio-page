@@ -78,7 +78,7 @@ export class ModalComponent implements OnInit {
       "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
       "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
       "links": {
-        "test": "marius-kasparek.de",
+        "test": "https://dabubble.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/DABubble"
       },
       "image": "./../../../assets/img/projects/dabubblescreen.png"
