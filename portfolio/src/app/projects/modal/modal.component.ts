@@ -55,7 +55,8 @@ export class ModalComponent implements OnInit {
       "technologies": ["JavaScript", "HTML", "CSS", "Python", "Django"],
       "links": {
         "test": "https://join.marius-kasparek.de/index.html",
-        "git": "https://github.com/mariuskas1/join"
+        "git": "https://github.com/mariuskas1/join",
+        "git2": "https://github.com/mariuskas1/join_backend"
       },
       "image": "./../../../assets/img/projects/join1.png"
     },

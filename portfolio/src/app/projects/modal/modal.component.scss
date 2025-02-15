@@ -213,7 +213,8 @@
     text-decoration: none;
     @include displayFlex();
     color: white;
-    width: 130px;
+    // width: 130px;
+    padding: 0 24px;
     height: 48px;
     font-family: 'Karla';
     font-size: 18px;
