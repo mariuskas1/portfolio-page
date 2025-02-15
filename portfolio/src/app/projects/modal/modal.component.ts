@@ -15,8 +15,8 @@ import { LanguageService } from '../../../app/services/language.service';
     trigger('slideInOut', [
       state('in', style({ translate: '0%' })),
       state('out', style({ translate:  '100%'})),
-      transition('in => out', animate('200ms ease-out')),
-      transition('out => in', animate('200ms ease-in'))
+      transition('in => out', animate('100ms ease-out')),
+      transition('out => in', animate('100ms ease-in'))
     ])
   ]
 })
@@ -52,7 +52,7 @@ export class ModalComponent implements OnInit {
       "name": "Join",
       "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["JavaScript", "HTML", "CSS", "Firebase"],
+      "technologies": ["JavaScript", "HTML", "CSS", "Python", "Django"],
       "links": {
         "test": "https://join.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/join"
@@ -76,7 +76,7 @@ export class ModalComponent implements OnInit {
       "name": "DABubble",
       "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
       "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
-      "technologies": ["Angular", "TypeScript", "Firebase", "HTML", "CSS"],
+      "technologies": ["Angular", "TypeScript", "Firebase"],
       "links": {
         "test": "https://dabubble.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/DABubble"
