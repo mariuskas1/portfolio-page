@@ -52,7 +52,7 @@ export class ModalComponent implements OnInit {
       "name": "Join",
       "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["JavaScript", "HTML", "CSS", "Python", "Django"],
+      "technologies": ["JavaScript", "HTML", "CSS", "Python", "Django", "Linux"],
       "links": {
         "test": "https://join.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/join",
