@@ -59,6 +59,11 @@ export class SkillsComponent implements OnInit {
       "image": "./../../assets/img/skills/angular.png"
     },
     {
+      "name": "RxJs",
+      "id": "rxjs",
+      "image": "./../../assets/img/skills/RxJs.png"
+    },
+    {
       "name": "Firebase",
       "id": "firebase",
       "image": "./../../assets/img/skills/firebase.png"
@@ -97,6 +102,16 @@ export class SkillsComponent implements OnInit {
     "name": "Django",
     "id": "django",
     "image": "./../../assets/img/skills/backend/Django.png"
+  },
+  {
+    "name": "C#",
+    "id": "csharp",
+    "image": "./../../assets/img/skills/backend/csharp.png"
+  },
+  {
+    "name": ".NET Core",
+    "id": "dotnet",
+    "image": "./../../assets/img/skills/backend/dotnetlogo.png"
   },
   {
     "name": "Linux",
@@ -138,11 +153,7 @@ export class SkillsComponent implements OnInit {
     "id": "cloud",
     "image": "./../../assets/img/skills/backend/Cloud.png"
   },
-  {
-    "name": "RxJs",
-    "id": "rxjs",
-    "image": "./../../assets/img/skills/backend/RxJs.png"
-  }
+  
 ];
 
 }
