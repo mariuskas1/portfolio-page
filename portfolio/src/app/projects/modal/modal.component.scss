@@ -206,8 +206,10 @@
 
 .link-div{
     margin-top: 8px;
+    
     width: 100%;
     @include displayFlex($jc: flex-start);
+    flex-wrap: wrap;
 }
 
 .link-div a{
@@ -221,7 +223,8 @@
     font-size: 18px;
     border: 1px solid white;
     border-radius: 32px;
-    margin-right: 24px;
+    margin-right: 16px;
+    margin-top: 8px;
     transition: all 125ms ease;
 
     &:hover{
@@ -269,7 +272,7 @@
 }
 
 
-@media(max-width: 750px){
+@media(max-width: 950px){
 
     .project-modal-content{
         flex-direction: column;
@@ -326,7 +329,7 @@
     }
 
     .project-modal{
-        padding: 0;
+        // padding: 0;
         padding-bottom: 8px;
         
     }
