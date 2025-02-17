@@ -200,3 +200,9 @@
         top: 750px;
     }
 }
+
+@media(max-width: 600px){
+    .stripes-bg{
+        display: none;
+    }
+}
