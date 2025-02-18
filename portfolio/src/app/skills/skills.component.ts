@@ -109,7 +109,7 @@ export class SkillsComponent implements OnInit {
     "image": "./../../assets/img/skills/backend/csharp.png"
   },
   {
-    "name": ".NET Core",
+    "name": "ASP.NET Core",
     "id": "dotnet",
     "image": "./../../assets/img/skills/backend/dotnetlogo.png"
   },

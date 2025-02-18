@@ -65,7 +65,7 @@ export class ModalComponent implements OnInit {
       "name": "Sharkie",
       "descriptionEN": "A 2D game based on an object-oriented approach. Help Sharkie to maneuver his way through the dangerous deep sea.",
       "descriptionDE": "Ein 2D-Spiel mit objektorientertem Ansatz. Helfen Sie Sharkie dabei, sich einen Weg durch die gefährliche Tiefsee zu bahnen.",
-      "technologies": ["Javascript", "HTML", "CSS"],
+      "technologies": ["JavaScript", "HTML", "CSS"],
       "links": {
         "test": "https://sharkie.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/sharkie"

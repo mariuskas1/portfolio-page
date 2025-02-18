@@ -17,15 +17,15 @@
     "about":{
         "title": "Wer ich bin",
         "title2": "Über mich",
-        "text1": "Hi, ich bin ein deutsch- und englischsprachiger Fullstack-Entwickler, wohnhaft in Leipzig. Begeistert von den grenzenlosen Möglichkeiten in der IT, freue ich mich darauf, visuell ansprechende und intuitive Internetseiten und Applikationen zu entwickeln.",
-        "text2": "Ich kann sowohl vor Ort in Leipzig als auch remote übers Home-Office effektiv arbeiten.",
-        "text3": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
-        "text4": "Programmieren ist für mich eine kreative Art des Problemelösens. Ich kann komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen verwandeln und helfe Ihnen so, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+        "text1": "Hi, ich bin ein deutsch- und englischsprachiger Fullstack-Entwickler aus Leipzig. Ich begeistere mich für die grenzenlosen Möglichkeiten der IT, und die Entwicklung visuell ansprechender sowie intuitiver Applikationen ist meine große Leidenschaft.",
+        "text2": "Ich kann sowohl vor Ort in Leipzig als auch remote im Home-Office arbeiten.",
+        "text3": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu erweitern.",
+        "text4": "Programmieren ist für mich eine kreative Art des Problemlösens. Ich kann komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen verwandeln und unterstütze Sie dabei, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
     },
     "skills":{
         "title": "Technologien",
         "title2": "Kenntnisse",
-        "text1": "In der Vergangenheit habe ich bereits an vielfältigen Projekten mitgewirkt und dabei verschiedene Frontend- und Backend-Technologien eingesetzt. Ich bin immer offen dafür, neue Technologien zu erlernen, um in der sich ständig weiterentwickelnden Welt der Webentwicklung am Ball zu bleiben.",
+        "text1": "In der Vergangenheit habe ich bereits an vielfältigen Projekten mitgewirkt und dabei verschiedene Frontend- und Backend-Technologien eingesetzt. Ich bin immer offen dafür, neue Technologien zu erlernen und mein bereits vorhandenes Wissen noch zu vertiefen.",
         "text2.1": "Sie benötigen",
         "text2.2": "andere Kenntnisse?",
         "text3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
@@ -52,9 +52,9 @@
         "text3": "Lassen Sie uns miteinander reden!",
         "form":{
             "caption1": "Wie lautet Ihr Name?",
-            "placeholder1": "Ihr Name kommt hier hin",
+            "placeholder1": "Vor- und Nachname",
             "caption2": "Wie lautet Ihre Mail-Adresse?",
-            "placeholder2": "youremail.com",
+            "placeholder2": "youremail@mail.com",
             "caption3": "Wie kann ich Ihnen helfen?",
             "placeholder3": "Hallo Marius, ich bin daran interessiert...",
             "policy1": "Ich habe die",
