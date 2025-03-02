@@ -52,7 +52,7 @@ export class ModalComponent implements OnInit {
       "name": "Join",
       "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["JavaScript", "HTML", "CSS", "Python", "Django"],
+      "technologies": ["JavaScript", "HTML", "CSS", "Django", "ASP.NET Core"],
       "links": {
         "test": "https://join.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/join",
@@ -77,7 +77,19 @@ export class ModalComponent implements OnInit {
       "name": "DABubble",
       "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
       "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
-      "technologies": ["Angular", "TypeScript", "Firebase"],
+      "technologies": ["Angular", "Firebase"],
+      "links": {
+        "test": "https://dabubble.marius-kasparek.de/index.html",
+        "git": "https://github.com/mariuskas1/DABubble"
+      },
+      "image": "./../../../assets/img/projects/dabubblescreen.png"
+    },
+    {
+      "number": 4,
+      "name": "Coderr",
+      "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
+      "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
+      "technologies": ["Django", "ASP.NET Core"],
       "links": {
         "test": "https://dabubble.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/DABubble"
