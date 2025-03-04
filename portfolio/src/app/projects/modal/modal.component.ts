@@ -55,8 +55,9 @@ export class ModalComponent implements OnInit {
       "technologies": ["JavaScript", "HTML", "CSS", "Django", "ASP.NET Core"],
       "links": {
         "test": "https://join.marius-kasparek.de/index.html",
-        "git": "https://github.com/mariuskas1/join",
-        "git2": "https://github.com/mariuskas1/join_backend"
+        "git": "https://github.com/mariuskas1/join_index",
+        // "git2": "https://github.com/mariuskas1/join_backend",
+        // "git3": "https://github.com/mariuskas1/JoinAPI"
       },
       "image": "./../../../assets/img/projects/join1.png"
     },
@@ -91,8 +92,8 @@ export class ModalComponent implements OnInit {
       "descriptionDE": "Eine Backend-API für freiberufliche IT-Dienstleistungen, die es Nutzern ermöglicht, Konten zu erstellen, Angebote zu veröffentlichen, Bestellungen aufzugeben und Bewertungen abzugeben. Bitte beachten: Für diese App habe ich ausschließlich das Backend bereitgestellt. ",
       "technologies": ["Django", "ASP.NET Core"],
       "links": {
-        "test": "https://dabubble.marius-kasparek.de/index.html",
-        "git": "https://github.com/mariuskas1/DABubble"
+        "test": "https://coderr.marius-kasparek.de/index.html",
+        "git": "https://github.com/mariuskas1/coderr_index"
       },
       "image": "./../../../assets/img/projects/coderr.png"
     }
