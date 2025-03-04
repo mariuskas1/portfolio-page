@@ -87,14 +87,14 @@ export class ModalComponent implements OnInit {
     {
       "number": 4,
       "name": "Coderr",
-      "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
-      "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
+      "descriptionEN": "A backend API for freelance IT services, allowing users to create accounts, post offers, place orders, and submit reviews. Please Note: For this app, I only provided the backend.",
+      "descriptionDE": "Eine Backend-API für freiberufliche IT-Dienstleistungen, die es Nutzern ermöglicht, Konten zu erstellen, Angebote zu veröffentlichen, Bestellungen aufzugeben und Bewertungen abzugeben. Bitte beachten: Für diese App habe ich ausschließlich das Backend bereitgestellt. ",
       "technologies": ["Django", "ASP.NET Core"],
       "links": {
         "test": "https://dabubble.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/DABubble"
       },
-      "image": "./../../../assets/img/projects/dabubblescreen.png"
+      "image": "./../../../assets/img/projects/coderr.png"
     }
   ];
 
