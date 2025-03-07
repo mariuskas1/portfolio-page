@@ -43,9 +43,9 @@ export class ProjectsComponent implements OnInit {
     }
 
     nextProject(){
-      if(this.clickedProject < 3){
+      if(this.clickedProject < 4){
         this.clickedProject++;
-      } else if (this.clickedProject === 3){
+      } else if (this.clickedProject === 4){
         this.clickedProject = 0;
       }
     }

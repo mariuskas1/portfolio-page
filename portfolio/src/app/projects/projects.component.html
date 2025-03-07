@@ -60,6 +60,17 @@
                             <span class="technology-span">ASP.NET Core</span>                         
                         </div>
                     </div>
+                    <div class="project-row" (mouseenter)="showPreview(5)" (mouseleave)="hidePreview()" (click)="openProjectModal(4)" >
+                        <div class="project-title">
+                            <span>Videoflix</span>
+                            <img src="./../../assets/img/arrow_outward.png" class="arrow-link">
+                        </div>
+                        <div class="project-technologies">
+                            <span class="technology-span">Angular</span>
+                            <div class="small-bar"></div>
+                            <span class="technology-span">Django</span>                         
+                        </div>
+                    </div>
                 </div>
 
 
@@ -91,9 +102,17 @@
                         </div>
                     }
                     @if(hoveredProject === 4){
-                        <div class="project3-preview">
+                        <div class="project4-preview">
                             <div class="single-project-preview-div">
                                 <img src="./../../assets/img/projects/coderr.png" class="project-img-small">
+                                <img src="./../../assets/img/projects/stripes.png" class="small-project-bg">
+                            </div>
+                        </div>
+                    }
+                    @if(hoveredProject === 5){
+                        <div class="project5-preview">
+                            <div class="single-project-preview-div">
+                                <img src="./../../assets/img/projects/videoflix.png" class="project-img-small">
                                 <img src="./../../assets/img/projects/stripes.png" class="small-project-bg">
                             </div>
                         </div>

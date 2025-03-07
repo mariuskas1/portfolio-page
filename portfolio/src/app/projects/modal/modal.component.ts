@@ -96,6 +96,18 @@ export class ModalComponent implements OnInit {
         "git": "https://github.com/mariuskas1/coderr_index"
       },
       "image": "./../../../assets/img/projects/coderr.png"
+    },
+    {
+      "number": 5,
+      "name": "Videoflix",
+      "descriptionEN": "A scalable video streaming platform inspired by Netflix, allowing users to browse and watch videos, with built-in user authentication.",
+      "descriptionDE": "Eine skalierbare Video-Streaming-Plattform, inspiriert von Netflix, mit integrierter Nutzer-Authentifizierung. ",
+      "technologies": ["Angular", "Django"],
+      "links": {
+        "test": "https://videoflix.marius-kasparek.de/index.html",
+        "git": "https://github.com/mariuskas1/videoflix_index"
+      },
+      "image": "./../../../assets/img/projects/videoflix.png"
     }
   ];
 
