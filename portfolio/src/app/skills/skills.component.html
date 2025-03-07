@@ -19,7 +19,7 @@
             <div class="technologies-div" data-aos="zoom-in-left" data-aos-duration="500">
 
                 @if(shownTechnologies === "frontend"){
-                    <span class="technologies-header">Frontend {{ 'skills.technologies' | translate }}</span>
+                    <span class="technologies-header">Frontend/{{ 'skills.general' | translate }} {{ 'skills.technologies' | translate }}</span>
                     <div class="skill-icons-container">
                         @for (skill of frontendSkills; track $index) {
                             <div class="icon-box" id="{{ skill.id }}" data-aos="flip-up" data-aos-duration="500">

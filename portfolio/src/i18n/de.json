@@ -30,10 +30,11 @@
         "text2.2": "andere Kenntnisse?",
         "text3": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
         "button": "Let's talk",
-        "technologies": "Technologien",
+        "technologies": "Kenntnisse",
         "mindset1": "Wachstums-",
         "mindset2": "mentalität",
-        "hover": "Besonders interessiert bin ich an diesen Technologien:"
+        "hover": "Besonders interessiert bin ich an diesen Technologien:",
+        "general": "Allgemeine"
     },
     "projects":{
         "title": "Ausgewählte Projekte",

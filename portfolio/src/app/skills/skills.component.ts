@@ -29,6 +29,16 @@ export class SkillsComponent implements OnInit {
 
   frontendSkills = [
     {
+      "name": "Angular",
+      "id": "angular",
+      "image": "./../../assets/img/skills/angular.png"
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript",
+      "image": "./../../assets/img/skills/typescript.png"
+    },
+    {
       "name": "HTML",
       "id": "html",
       "image": "./../../assets/img/skills/html.png"
@@ -43,25 +53,19 @@ export class SkillsComponent implements OnInit {
       "id": "javascript",
       "image": "./../../assets/img/skills/javascript.png"
     },
-    {
-      "name": "Material Design",
-      "id": "material",
-      "image": "./../../assets/img/skills/materialdesign.png"
-    },
-    {
-      "name": "TypeScript",
-      "id": "typescript",
-      "image": "./../../assets/img/skills/typescript.png"
-    },
-    {
-      "name": "Angular",
-      "id": "angular",
-      "image": "./../../assets/img/skills/angular.png"
-    },
+    
+    
+    
+    
     {
       "name": "RxJs",
       "id": "rxjs",
       "image": "./../../assets/img/skills/RxJs.png"
+    },
+    {
+      "name": "Rest-Api",
+      "id": "rest-api",
+      "image": "./../../assets/img/skills/rest.png"
     },
     {
       "name": "Firebase",
@@ -73,21 +77,22 @@ export class SkillsComponent implements OnInit {
       "id": "git",
       "image": "./../../assets/img/skills/git.png"
     },
+    
     {
-      "name": "Rest-Api",
-      "id": "rest-api",
-      "image": "./../../assets/img/skills/rest.png"
+      "name": "Material Design",
+      "id": "material",
+      "image": "./../../assets/img/skills/materialdesign.png"
     },
-    {
-      "name": "Scrum",
-      "id": "scrum",
-      "image": "./../../assets/img/skills/scrum.png"
-    },
-    {
-      "name": "Growth mindset",
-      "id": "growth",
-      "image": "./../../assets/img/skills/growthmindset.png"
-    }
+    // {
+    //   "name": "Scrum",
+    //   "id": "scrum",
+    //   "image": "./../../assets/img/skills/scrum.png"
+    // },
+    // {
+    //   "name": "Growth mindset",
+    //   "id": "growth",
+    //   "image": "./../../assets/img/skills/growthmindset.png"
+    // }
   ];
   
   
@@ -123,10 +128,15 @@ export class SkillsComponent implements OnInit {
     "id": "redis",
     "image": "./../../assets/img/skills/backend/Redis.png"
   },
+  // {
+  //   "name": "Flask",
+  //   "id": "flask",
+  //   "image": "./../../assets/img/skills/backend/Flask.png"
+  // },
   {
-    "name": "Flask",
-    "id": "flask",
-    "image": "./../../assets/img/skills/backend/Flask.png"
+    "name": "SQL",
+    "id": "sql",
+    "image": "./../../assets/img/skills/backend/SQL.png"
   },
   {
     "name": "PostgreSQL",
@@ -138,11 +148,7 @@ export class SkillsComponent implements OnInit {
     "id": "heroku",
     "image": "./../../assets/img/skills/backend/Heroku.png"
   },
-  {
-    "name": "SQL",
-    "id": "sql",
-    "image": "./../../assets/img/skills/backend/SQL.png"
-  },
+  
   {
     "name": "Docker",
     "id": "docker",
