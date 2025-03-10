@@ -28,16 +28,7 @@ export class SkillsComponent implements OnInit {
 
 
   frontendSkills = [
-    {
-      "name": "Angular",
-      "id": "angular",
-      "image": "./../../assets/img/skills/angular.png"
-    },
-    {
-      "name": "TypeScript",
-      "id": "typescript",
-      "image": "./../../assets/img/skills/typescript.png"
-    },
+    
     {
       "name": "HTML",
       "id": "html",
@@ -52,6 +43,16 @@ export class SkillsComponent implements OnInit {
       "name": "JavaScript",
       "id": "javascript",
       "image": "./../../assets/img/skills/javascript.png"
+    },
+    {
+      "name": "TypeScript",
+      "id": "typescript",
+      "image": "./../../assets/img/skills/typescript.png"
+    },
+    {
+      "name": "Angular",
+      "id": "angular",
+      "image": "./../../assets/img/skills/angular.png"
     },
     
     
@@ -73,21 +74,23 @@ export class SkillsComponent implements OnInit {
       "image": "./../../assets/img/skills/firebase.png"
     },
     {
+      "name": "Material Design",
+      "id": "material",
+      "image": "./../../assets/img/skills/materialdesign.png"
+    },
+    {
+      "name": "Scrum",
+      "id": "scrum",
+      "image": "./../../assets/img/skills/scrum.png"
+    },
+    {
       "name": "GIT",
       "id": "git",
       "image": "./../../assets/img/skills/git.png"
     },
     
-    {
-      "name": "Material Design",
-      "id": "material",
-      "image": "./../../assets/img/skills/materialdesign.png"
-    },
-    // {
-    //   "name": "Scrum",
-    //   "id": "scrum",
-    //   "image": "./../../assets/img/skills/scrum.png"
-    // },
+    
+    
     // {
     //   "name": "Growth mindset",
     //   "id": "growth",
