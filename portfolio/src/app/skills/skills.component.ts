@@ -56,15 +56,13 @@ export class SkillsComponent implements OnInit {
     },
     
     
-    
-    
     {
       "name": "RxJs",
       "id": "rxjs",
       "image": "./../../assets/img/skills/RxJs.png"
     },
     {
-      "name": "Rest-Api",
+      "name": "REST-API",
       "id": "rest-api",
       "image": "./../../assets/img/skills/rest.png"
     },
@@ -131,11 +129,7 @@ export class SkillsComponent implements OnInit {
     "id": "redis",
     "image": "./../../assets/img/skills/backend/Redis.png"
   },
-  // {
-  //   "name": "Flask",
-  //   "id": "flask",
-  //   "image": "./../../assets/img/skills/backend/Flask.png"
-  // },
+  
   {
     "name": "SQL",
     "id": "sql",
@@ -145,6 +139,11 @@ export class SkillsComponent implements OnInit {
     "name": "PostgreSQL",
     "id": "postgresql",
     "image": "./../../assets/img/skills/backend/PostgreSQL.png"
+  },
+  {
+    "name": "Flask",
+    "id": "flask",
+    "image": "./../../assets/img/skills/backend/Flask.png"
   },
   {
     "name": "Heroku",
