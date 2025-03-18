@@ -140,16 +140,16 @@ export class SkillsComponent implements OnInit {
     "id": "postgresql",
     "image": "./../../assets/img/skills/backend/PostgreSQL.png"
   },
-  {
-    "name": "Flask",
-    "id": "flask",
-    "image": "./../../assets/img/skills/backend/Flask.png"
-  },
-  {
-    "name": "Heroku",
-    "id": "heroku",
-    "image": "./../../assets/img/skills/backend/Heroku.png"
-  },
+  // {
+  //   "name": "Flask",
+  //   "id": "flask",
+  //   "image": "./../../assets/img/skills/backend/Flask.png"
+  // },
+  // {
+  //   "name": "Heroku",
+  //   "id": "heroku",
+  //   "image": "./../../assets/img/skills/backend/Heroku.png"
+  // },
   
   {
     "name": "Docker",
