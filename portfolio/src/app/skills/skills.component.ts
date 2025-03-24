@@ -57,7 +57,7 @@ export class SkillsComponent implements OnInit {
     {
       "name": "React",
       "id": "react",
-      "image": "./../../assets/img/skills/react.png"
+      "image": "./../../assets/img/skills/react1.png"
     },
     
     
