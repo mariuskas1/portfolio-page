@@ -14,9 +14,9 @@ import { LanguageService } from '../../../app/services/language.service';
   animations: [
     trigger('slideInOut', [
       state('in', style({ translate: '0%' })),
-      state('out', style({ translate:  '100%'})),
-      transition('in => out', animate('100ms ease-out')),
-      transition('out => in', animate('100ms ease-in'))
+      state('out', style({ translate:  '200%'})),
+      transition('in => out', animate('125ms ease-out')),
+      transition('out => in', animate('125ms ease-in'))
     ])
   ]
 })
@@ -50,11 +50,11 @@ export class ModalComponent implements OnInit {
     {
       "number": 1,
       "name": "Join",
-      "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "descriptionEN": "A Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
       "technologies": ["React", "Django", "ASP.NET Core"],
       "links": {
-        "test": "https://join.marius-kasparek.de/index.html",
+        "test": "https://join.marius-kasparek.de/",
         "git": "https://github.com/mariuskas1/join_index",
         // "git2": "https://github.com/mariuskas1/join_backend",
         // "git3": "https://github.com/mariuskas1/JoinAPI"
