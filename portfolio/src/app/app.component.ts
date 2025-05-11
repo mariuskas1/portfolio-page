@@ -5,7 +5,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from "./about/about.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
-import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from "./contact/contact.component";
 import { HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -21,7 +20,6 @@ import { FooterComponent } from "./footer/footer.component";
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ReferencesComponent,
     ContactComponent,
     HttpClientModule,
     TranslateModule,

@@ -52,12 +52,10 @@ export class ModalComponent implements OnInit {
       "name": "Join",
       "descriptionEN": "A Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["React", "Django", "ASP.NET Core"],
+      "technologies": ["React", "JavaScript", "Django", "ASP.NET Core"],
       "links": {
         "test": "https://join.marius-kasparek.de/",
         "git": "https://github.com/mariuskas1/join_index",
-        // "git2": "https://github.com/mariuskas1/join_backend",
-        // "git3": "https://github.com/mariuskas1/JoinAPI"
       },
       "image": "./../../../assets/img/projects/join1.png"
     },
@@ -78,7 +76,7 @@ export class ModalComponent implements OnInit {
       "name": "DABubble",
       "descriptionEN": "A real-time-messaging app, similar to Slack or Discord. Create Channels to organize conversations and collaborate with your team members.",
       "descriptionDE": "Eine Echtzeit-Messaging-App, ähnlich wie Slack oder Discord. Erstellen Sie Kanäle, um Gespräche zu organisieren und mit Ihrem Team zusammenzuarbeiten.",
-      "technologies": ["Angular", "Firebase"],
+      "technologies": ["Angular",  "Firebase"],
       "links": {
         "test": "https://dabubble.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/DABubble"
