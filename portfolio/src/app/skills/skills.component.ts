@@ -14,13 +14,13 @@ export class SkillsComponent implements OnInit {
      AOS.init();
    }
 
-  shownTechnologies = "frontend";
+  shownTechnologies = "backend";
 
 
-  changeTechnologies(){
-    if(this.shownTechnologies === "frontend"){
+  changeTechnologies() {
+    if (this.shownTechnologies === "frontend") {
       this.shownTechnologies = "backend";
-    } else if(this.shownTechnologies === "backend"){
+    } else if (this.shownTechnologies === "backend") {
       this.shownTechnologies = "frontend";
     }
   };
@@ -59,8 +59,6 @@ export class SkillsComponent implements OnInit {
       "id": "react",
       "image": "./../../assets/img/skills/react1.png"
     },
-    
-    
     {
       "name": "RxJs",
       "id": "rxjs",
@@ -105,6 +103,16 @@ export class SkillsComponent implements OnInit {
 
   backendSkills = [
   {
+    "name": "C#",
+    "id": "csharp",
+    "image": "./../../assets/img/skills/backend/csharp.png"
+  },
+  {
+    "name": ".NET",
+    "id": "dotnet",
+    "image": "./../../assets/img/skills/backend/dotnetlogo.png"
+  },
+  {
     "name": "Python",
     "id": "python",
     "image": "./../../assets/img/skills/backend/Python.png"
@@ -114,16 +122,7 @@ export class SkillsComponent implements OnInit {
     "id": "django",
     "image": "./../../assets/img/skills/backend/Django.png"
   },
-  {
-    "name": "C#",
-    "id": "csharp",
-    "image": "./../../assets/img/skills/backend/csharp.png"
-  },
-  {
-    "name": "ASP.NET Core",
-    "id": "dotnet",
-    "image": "./../../assets/img/skills/backend/dotnetlogo.png"
-  },
+  
   {
     "name": "Linux",
     "id": "linux",
