@@ -52,7 +52,7 @@ export class ModalComponent implements OnInit {
       "name": "Join",
       "descriptionEN": "A Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "descriptionDE": "Ein Task Manager, angelehnt an das Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.",
-      "technologies": ["React", "JavaScript", "Django", "ASP.NET Core"],
+      "technologies": ["React", "JavaScript", "Django", ".NET"],
       "links": {
         "test": "https://join.marius-kasparek.de/",
         "git": "https://github.com/mariuskas1/join_index",
@@ -88,7 +88,7 @@ export class ModalComponent implements OnInit {
       "name": "Coderr",
       "descriptionEN": "A backend API for freelance IT services, allowing users to create accounts, post offers, place orders, and submit reviews. Please Note: For this app, I only provided the backend.",
       "descriptionDE": "Eine Backend-API für freiberufliche IT-Dienstleistungen, die es Nutzern ermöglicht, Konten zu erstellen, Angebote zu veröffentlichen, Bestellungen aufzugeben und Bewertungen abzugeben. Bitte beachten: Für diese App habe ich ausschließlich das Backend bereitgestellt. ",
-      "technologies": ["Django", "ASP.NET Core"],
+      "technologies": ["Django", ".NET"],
       "links": {
         "test": "https://coderr.marius-kasparek.de/index.html",
         "git": "https://github.com/mariuskas1/coderr_index"
