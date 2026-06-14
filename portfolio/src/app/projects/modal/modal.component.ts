@@ -114,6 +114,15 @@ export class ModalComponent implements OnInit {
     return this.clickedProject !== undefined ? this.projects[this.clickedProject] : null;
   }
 
+  getTechnologyIcon(technology: string): string {
+    const iconMap: Record<string, string> = {
+      '.NET': 'dotnet',
+    };
+
+    const key = iconMap[technology] ?? technology.toLowerCase();
+    return `./../../../assets/img/skills/${key}.png`;
+  }
+
 
   
   

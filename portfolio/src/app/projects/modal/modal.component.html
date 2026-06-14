@@ -23,7 +23,7 @@
                     <div class="technologies-div-large">
                         @for (technology of openedProjectData.technologies; track $index) {
                             <div class="technology-div">
-                                <img [src]="'./../../../assets/img/skills/' + technology.toLowerCase() + '.png'" class="technology-icon">
+                                <img [src]=getTechnologyIcon(technology) class="technology-icon">
                                 <span class="technology-name">{{technology}}</span>
                             </div>
                         }
